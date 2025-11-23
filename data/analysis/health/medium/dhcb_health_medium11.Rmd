@@ -1,0 +1,73 @@
+
+```{r}
+#read data
+setwd("C:/Users/vishrti/Desktop/ML webinar")
+library(openxlsx)
+dhcb<-read.csv("dhcb_health_small.csv")
+```
+```{r}
+dim(dhcb)
+dhcb_health_small<-dhcb[,-c(1,53)]
+dim(dhcb_health_small)
+```
+
+```{r}
+dhcb_health_small.Scaled <- scale(dhcb_health_small[,3:51])
+head(dhcb_health_small.Scaled)
+
+str(dhcb_health_small.Scaled)
+
+
+sum(is.na(dhcb_health_small.Scaled))
+
+```
+
+```{r}
+# removing columns which have 0 variance for this set of data
+#[42] "Mobile.Health.Clinic.(Numbers)"                                     
+#[43] "Mobile.Health.Clinic.Doctors.Total.Strength.(Numbers)"              
+#[44] "Mobile.Health.Clinic.Doctors.In.Position.(Numbers)"  
+#[26] "Hospital.Allopathic.(Numbers)"                                      
+#[27] "Hospital.Allopathic.Doctors.Total.Strength.(Numbers)"               
+#[28] "Hospital.Allopathic.Doctors.In.Position.(Numbers)"    
+#[6] "Community.Health.Centre.(Numbers)"                                  
+#[7] "Total.Positions.(Doctors.&.Support)"                                
+#[8] "Total.Required.Strength.(Doctors.&.Support)"         
+dhcb_health_small.Scaled1<-dhcb_health_small.Scaled[,-c(6,7,8,26,27,28,42,43,44)]
+dim(dhcb_health_small.Scaled1)
+```
+
+
+```{r}
+
+wssplot <- function(data, nc=15, seed=3110){
+  wss <- (nrow(data)-1)*sum(apply(data,2,var))
+  for (i in 2:nc){
+    set.seed(seed)
+    wss[i] <- sum(kmeans(data, centers=i)$withinss)}
+  plot(1:nc, wss, type="b", xlab="Number of Clusters",
+       ylab="Within groups sum of squares")}
+
+wssplot(dhcb_health_small.Scaled1, nc=5)
+
+sum(is.na(dhcb_health_small.Scaled1))
+```
+
+```{r}
+kmeans.clus = kmeans(x=dhcb_health_small.Scaled1, centers = 4, nstart = 3)
+
+dhcb_health_small$Clusters <- kmeans.clus$cluster
+
+aggr = aggregate(dhcb_health_small[,-c(1,2,8,9,10,28,29,30,44,45,46)],list(dhcb_health_small$Clusters),mean)
+
+aggr
+
+
+```
+
+```{r}
+write.csv(dhcb_health_small,file="dhcb_health_small_rmd.csv")
+
+write.csv(aggr,file="dhcb_health_small1_rmd.csv")
+
+```

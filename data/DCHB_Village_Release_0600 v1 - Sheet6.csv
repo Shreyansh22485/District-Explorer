@@ -1,0 +1,158 @@
+Village Name,Bucket,6842,Minimum,Q1,Median,Q3,Maximum,Outlier - Min Count,Outlier - Max Count
+Total Area,Demographics,"  4,195,635 ",  2 ,  211 ,  395 ,  769 ,"  16,523 ",  -   ,  485 
+Households,Demographics,"  3,043,756 ",  -   ,  167 ,  320 ,  578 ,"  5,996 ",  -   ,  419 
+Population,Demographics,"  16,509,359 ",  -   ,  919 ,"  1,749 ","  3,128 ","  30,094 ",  -   ,  414 
+Male Population,Demographics,"  8,774,006 ",  -   ,  485 ,  928 ,"  1,660 ","  15,873 ",  -   ,  417 
+Female Population,Demographics,"  7,735,353 ",  -   ,  432 ,  820 ,"  1,467 ","  14,221 ",  -   ,  410 
+Primary School,Education,"  3,489 ",  -   ,  -   ,  -   ,  1 ,  12 ,  -   ,  219 
+Primary School-Distance,Education,"  59,865 ",  -   ,  5 ,  10 ,  13 ,  15 ,  -   ,  -   
+Middle Schools,Education,"  7,954 ",  -   ,  -   ,  1 ,  2 ,  15 ,  -   ,  46 
+Middle Schools-Distance,Education,"  78,065 ",  -   ,  10 ,  13 ,  13 ,  15 ,  527 ,  -   
+Secondary Schools,Education,"  5,011 ",  -   ,  -   ,  -   ,  1 ,  10 ,  -   ,  396 
+Secondary Schools-Distance,Education,"  68,245 ",  -   ,  10 ,  10 ,  13 ,  15 ,"  1,424 ",  -   
+Senior Secondary Schools,Education,"  2,618 ",  -   ,  -   ,  -   ,  -   ,  8 ,  -   ,"  1,669 "
+Senior Secondary Schools-Distance,Education,"  56,958 ",  -   ,  5 ,  10 ,  13 ,  15 ,  -   ,  -   
+Arts and Science Degree College,Education,  34 ,  -   ,  -   ,  -   ,  -   ,  2 ,  -   ,  32 
+Arts and Science Degree College-Distance,Education,"  21,245 ",  -   ,  -   ,  -   ,  5 ,  15 ,  -   ,  199 
+Engineering College,Education,  106 ,  -   ,  -   ,  -   ,  -   ,  4 ,  -   ,  95 
+Engineering College-Distance,Education,"  17,418 ",  -   ,  -   ,  -   ,  5 ,  15 ,  -   ,  199 
+Medicine College,Education,  10 ,  -   ,  -   ,  -   ,  -   ,  2 ,  -   ,  9 
+Medicine College-Distance,Education,"  8,073 ",  -   ,  -   ,  -   ,  -   ,  15 ,  -   ,"  1,038 "
+Management Institute,Education,  99 ,  -   ,  -   ,  -   ,  -   ,  3 ,  -   ,  88 
+Management Institute-Distance,Education,"  13,940 ",  -   ,  -   ,  -   ,  5 ,  15 ,  -   ,  199 
+Vocational Training School/ITI,Education,  86 ,  -   ,  -   ,  -   ,  -   ,  2 ,  -   ,  83 
+Vocational Training School/ITI-Distance,Education,"  18,258 ",  -   ,  -   ,  -   ,  5 ,  15 ,  -   ,  199 
+Non Formal Training Centre,Education,  24 ,  -   ,  -   ,  -   ,  -   ,  4 ,  -   ,  14 
+Non Formal Training Centre-Distance,Education,"  12,865 ",  -   ,  -   ,  -   ,  5 ,  15 ,  -   ,  199 
+School For Disabled,Education,  -   ,  -   ,  -   ,  -   ,  -   ,  -   ,  -   ,  -   
+School For Disabled-Distance,Education,"  8,970 ",  -   ,  -   ,  -   ,  -   ,  15 ,  -   ,"  1,223 "
+Community Health Centre,Health,  57 ,  -   ,  -   ,  -   ,  -   ,  1 ,  -   ,  57 
+Positions (Doctors & Support),Health,"  1,264 ",  -   ,  -   ,  -   ,  -   ,  41 ,  -   ,  57 
+Required Strength (Doctors & Support),Health,"  1,749 ",  -   ,  -   ,  -   ,  -   ,  51 ,  -   ,  57 
+Health Centre Distance,Health,"  29,448 ",  -   ,  -   ,  5 ,  5 ,  15 ,  -   ,  199 
+Primary Health Centre,Health,  334 ,  -   ,  -   ,  -   ,  -   ,  1 ,  -   ,  334 
+Primary Health Centre Doctors Strength,Health,"  3,612 ",  -   ,  -   ,  -   ,  -   ,  33 ,  -   ,  335 
+Primary Health Centre Doctors In Position,Health,"  2,842 ",  -   ,  -   ,  -   ,  -   ,  25 ,  -   ,  334 
+Primary Health Centre Distance,Health,"  41,085 ",  -   ,  5 ,  5 ,  10 ,  15 ,  -   ,  -   
+Primary Heallth Sub Centre,Health,"  2,247 ",  -   ,  -   ,  -   ,  1 ,  3 ,  -   ,  5 
+Primary Heallth Sub Centre Doctors Strength,Health,"  3,990 ",  -   ,  -   ,  -   ,  1 ,  9 ,  -   ,  143 
+Primary Heallth Sub Centre Doctors In Position,Health,"  3,611 ",  -   ,  -   ,  -   ,  1 ,  9 ,  -   ,  91 
+Primary Health Sub Centre Distance,Health,"  58,710 ",  -   ,  5 ,  10 ,  13 ,  15 ,  -   ,  -   
+Maternity And Child Welfare Centre,Health,  546 ,  -   ,  -   ,  -   ,  -   ,  2 ,  -   ,  545 
+Maternity And Child Welfare Centre Doctors Strength,Health,"  1,263 ",  -   ,  -   ,  -   ,  -   ,  10 ,  -   ,  545 
+Maternity And Child Welfare Centre Doctors In Position,Health,"  1,232 ",  -   ,  -   ,  -   ,  -   ,  8 ,  -   ,  545 
+Maternity Welfare Distance,Health,"  39,773 ",  -   ,  5 ,  5 ,  10 ,  15 ,  -   ,  -   
+TB Clinic,Health,  28 ,  -   ,  -   ,  -   ,  -   ,  1 ,  -   ,  28 
+TB Clinic Doctors Strength,Health,  34 ,  -   ,  -   ,  -   ,  -   ,  3 ,  -   ,  28 
+TB Clinic Doctors In Position,Health,  34 ,  -   ,  -   ,  -   ,  -   ,  3 ,  -   ,  28 
+TB Clinic Distance,Health,"  20,920 ",  -   ,  -   ,  -   ,  5 ,  15 ,  -   ,  199 
+Hospital Allopathic,Health,  3 ,  -   ,  -   ,  -   ,  -   ,  1 ,  -   ,  3 
+Hospital Allopathic Doctors Strength,Health,  496 ,  -   ,  -   ,  -   ,  -   ,  370 ,  -   ,  3 
+Hospital Allopathic Doctors In Position,Health,  442 ,  -   ,  -   ,  -   ,  -   ,  345 ,  -   ,  3 
+Allopathic Distance,Health,"  18,488 ",  -   ,  -   ,  -   ,  5 ,  15 ,  -   ,  199 
+Hospiltal Alternative Medicine,Health,  104 ,  -   ,  -   ,  -   ,  -   ,  1 ,  -   ,  104 
+Hospiltal Alternative Medicine Doctors Strength,Health,  328 ,  -   ,  -   ,  -   ,  -   ,  5 ,  -   ,  104 
+Hospiltal Alternative Medicine Doctors In Position,Health,  266 ,  -   ,  -   ,  -   ,  -   ,  5 ,  -   ,  101 
+Alternative Hospital Distance,Health,"  21,505 ",  -   ,  -   ,  -   ,  5 ,  15 ,  -   ,  199 
+Dispensary,Health,  514 ,  -   ,  -   ,  -   ,  -   ,  1 ,  -   ,  514 
+Dispensary Doctors Strength,Health,"  1,252 ",  -   ,  -   ,  -   ,  -   ,  5 ,  -   ,  514 
+Dispensary Doctors In Position,Health,"  1,107 ",  -   ,  -   ,  -   ,  -   ,  5 ,  -   ,  514 
+Dispencary Distance,Health,"  40,585 ",  -   ,  5 ,  5 ,  10 ,  15 ,  -   ,  -   
+Veterinary Hospital,Health,"  2,343 ",  -   ,  -   ,  -   ,  1 ,  2 ,  -   ,  -   
+Veterinary Hospital Doctors Strength,Health,"  5,531 ",  -   ,  -   ,  -   ,  2 ,  10 ,  -   ,  3 
+Veterinary Hospital Doctors In Position,Health,"  5,332 ",  -   ,  -   ,  -   ,  2 ,  8 ,  -   ,  1 
+Veterinary  Distance,Health,"  62,210 ",  -   ,  5 ,  10 ,  13 ,  15 ,  -   ,  -   
+Mobile Health Clinic,Health,  -   ,  -   ,  -   ,  -   ,  -   ,  -   ,  -   ,  -   
+Mobile Health Clinic Doctors Strength,Health,  -   ,  -   ,  -   ,  -   ,  -   ,  -   ,  -   ,  -   
+Mobile Health Clinic Doctors In Position,Health,  -   ,  -   ,  -   ,  -   ,  -   ,  -   ,  -   ,  -   
+Mobile Health  Distance,Health,"  22,200 ",  -   ,  -   ,  -   ,  5 ,  15 ,  -   ,  199 
+Family Welfare Centre,Health,  75 ,  -   ,  -   ,  -   ,  -   ,  2 ,  -   ,  73 
+Family Welfare Centre Doctors Strength,Health,  161 ,  -   ,  -   ,  -   ,  -   ,  7 ,  -   ,  74 
+Family Welfare Centre Doctors In Position,Health,  151 ,  -   ,  -   ,  -   ,  -   ,  7 ,  -   ,  72 
+Family Welfare  Distance,Health,"  29,033 ",  -   ,  -   ,  5 ,  5 ,  15 ,  -   ,  199 
+Tap Water-Treated,Infrastructure,"  6,642 ",  -   ,  1 ,  1 ,  1 ,  1 ,  199 ,  -   
+Well Functioning,Agriculture,"  1,399 ",  -   ,  -   ,  -   ,  -   ,  1 ,  -   ,"  1,399 "
+Hand Pump Functioning,Agriculture,"  4,712 ",  -   ,  -   ,  1 ,  1 ,  1 ,  -   ,  -   
+Tube Wells/Borehole Functioning,Agriculture,"  5,329 ",  -   ,  1 ,  1 ,  1 ,  1 ,"  1,512 ",  -   
+River/Canal Status,Agriculture,  971 ,  -   ,  -   ,  -   ,  -   ,  1 ,  -   ,  971 
+River/Canal Functioning All round the year,Agriculture,  845 ,  -   ,  -   ,  -   ,  -   ,  1 ,  -   ,  845 
+Tank/Pond/Lake Functioning All round the year,Agriculture,  905 ,  -   ,  -   ,  -   ,  -   ,  1 ,  -   ,  905 
+Closed Drainage,Infrastructure,  301 ,  -   ,  -   ,  -   ,  -   ,  1 ,  -   ,  301 
+Open Drainage,Infrastructure,"  6,389 ",  -   ,  1 ,  1 ,  1 ,  1 ,  452 ,  -   
+Water Treatment - Sewar Plants,Infrastructure,  740 ,  -   ,  -   ,  -   ,  -   ,  2 ,  -   ,  370 
+Sanitation Campaign (TSC),Infrastructure,"  6,335 ",  -   ,  1 ,  1 ,  1 ,  1 ,  506 ,  -   
+Community Toilet Complex,Infrastructure,  226 ,  -   ,  -   ,  -   ,  -   ,  1 ,  -   ,  226 
+Community Toilet Complex (excluding Bath) for General Public,Infrastructure,  329 ,  -   ,  -   ,  -   ,  -   ,  1 ,  -   ,  329 
+Community waste disposal system after house to house collection,Infrastructure,  322 ,  -   ,  -   ,  -   ,  -   ,  1 ,  -   ,  322 
+Community Bio-gas or recycle of waste for production use,Infrastructure,  167 ,  -   ,  -   ,  -   ,  -   ,  1 ,  -   ,  167 
+No System (Garbage on road/street),Infrastructure,"  4,896 ",  -   ,  -   ,  1 ,  1 ,  1 ,  -   ,  -   
+Post Office or Sub Post Office,Communication,"  2,430 ",  -   ,  -   ,  -   ,  1 ,  1 ,  -   ,  -   
+Post Office  Distance,Communication,"  57,935 ",  -   ,  5 ,  10 ,  13 ,  15 ,  -   ,  -   
+Telephone,Communication,"  5,998 ",  -   ,  1 ,  1 ,  1 ,  1 ,  843 ,  -   
+Telephone  Distance,Communication,"  81,615 ",  -   ,  13 ,  13 ,  13 ,  15 ,  644 ,  199 
+PCO,Communication,"  4,266 ",  -   ,  -   ,  1 ,  1 ,  1 ,  -   ,  -   
+PCO Distance,Communication,"  71,120 ",  -   ,  10 ,  13 ,  13 ,  15 ,"  1,364 ",  -   
+Internet Cafes,Communication,  455 ,  -   ,  -   ,  -   ,  -   ,  1 ,  -   ,  455 
+Internet Cafes-Distance,Communication,"  33,453 ",  -   ,  -   ,  5 ,  10 ,  15 ,  -   ,  -   
+Private Courier Facility,Communication,  250 ,  -   ,  -   ,  -   ,  -   ,  1 ,  -   ,  250 
+Private Courier Facility-Distance,Communication,"  30,840 ",  -   ,  -   ,  5 ,  5 ,  15 ,  -   ,  229 
+Public Bus Service,Transportation,"  6,259 ",  -   ,  1 ,  1 ,  1 ,  1 ,  582 ,  -   
+Public Bus Service-Distance,Transportation,"  83,468 ",  -   ,  13 ,  13 ,  13 ,  15 ,  383 ,  199 
+Private Bus Service,Transportation,"  4,402 ",  -   ,  -   ,  1 ,  1 ,  1 ,  -   ,  -   
+Private Bus Service-Distance,Transportation,"  71,405 ",  -   ,  10 ,  13 ,  13 ,  15 ,"  1,320 ",  -   
+Railway Station,Transportation,  166 ,  -   ,  -   ,  -   ,  -   ,  1 ,  -   ,  166 
+Railway Station-Distance,Transportation,"  24,310 ",  -   ,  -   ,  -   ,  5 ,  15 ,  -   ,  199 
+"Other Transport - Auto, Van Rickshaw etc.",Transportation,"  6,797 ",  -   ,  1 ,  1 ,  1 ,  2 ,  199 ,  155 
+"Other Transport - Auto, Van Rickshaw etc.-Distance",Transportation,"  84,948 ",  -   ,  13 ,  13 ,  13 ,  15 ,  155 ,  199 
+Highways,Infrastructure,"  9,551 ",  -   ,  1 ,  1 ,  2 ,  2 ,  -   ,  -   
+Highways-Distance,Infrastructure,"  56,983 ",  -   ,  -   ,  13 ,  13 ,  15 ,  -   ,  -   
+Other Pucca Roads,Infrastructure,"  6,586 ",  -   ,  1 ,  1 ,  1 ,  1 ,  255 ,  -   
+Other Pucca Roads-Distance,Infrastructure,"  85,640 ",  -   ,  13 ,  13 ,  13 ,  15 ,  56 ,  199 
+Kuchha Roads,Infrastructure,"  6,642 ",  -   ,  1 ,  1 ,  1 ,  1 ,  199 ,  -   
+Banks on any Kind,Banking,"  6,531 ",  -   ,  1 ,  1 ,  1 ,  1 ,  310 ,  -   
+Banks on any Kind-Distance,Banking,"  86,288 ",  13 ,  13 ,  13 ,  13 ,  15 ,  -   ,  310 
+Agricultural Credit Societies,Banking,"  1,653 ",  -   ,  -   ,  -   ,  -   ,  1 ,  -   ,"  1,653 "
+Agricultural Credit Societies-Distance,Banking,"  56,598 ",  -   ,  5 ,  10 ,  13 ,  15 ,  -   ,  -   
+Mandis/Regular Market,Banking,  617 ,  -   ,  -   ,  -   ,  -   ,  1 ,  -   ,  617 
+Mandis/Regular Market-Distance,Banking,"  35,103 ",  -   ,  -   ,  5 ,  10 ,  15 ,  -   ,  -   
+Weekly Haat,Banking,  473 ,  -   ,  -   ,  -   ,  -   ,  1 ,  -   ,  473 
+Weekly Haat-Distance,Banking,"  30,133 ",  -   ,  -   ,  5 ,  5 ,  15 ,  -   ,  199 
+Agricultural Marketing Society,Banking,  569 ,  -   ,  -   ,  -   ,  -   ,  1 ,  -   ,  569 
+Agricultural Marketing Society-Distance,Banking,"  33,428 ",  -   ,  -   ,  5 ,  10 ,  15 ,  -   ,  -   
+ASHA,Banking,"  6,404 ",  -   ,  1 ,  1 ,  1 ,  1 ,  437 ,  -   
+ASHA-Distance,Banking,"  84,865 ",  -   ,  13 ,  13 ,  13 ,  15 ,  238 ,  199 
+Community Centre with/without TV,Social and Culture,  784 ,  -   ,  -   ,  -   ,  -   ,  1 ,  -   ,  784 
+Community Centre with/without TV-Distance,Social and Culture,"  33,525 ",  -   ,  -   ,  5 ,  10 ,  15 ,  -   ,  -   
+Sports Field,Social and Culture,"  2,062 ",  -   ,  -   ,  -   ,  1 ,  1 ,  -   ,  -   
+Sports Field-Distance,Social and Culture,"  48,190 ",  -   ,  5 ,  5 ,  13 ,  15 ,  -   ,  -   
+Sports Club/Recreation Centre,Social and Culture,  471 ,  -   ,  -   ,  -   ,  -   ,  1 ,  -   ,  471 
+Sports Club/Recreation Centre-Distance,Social and Culture,"  26,128 ",  -   ,  -   ,  5 ,  5 ,  15 ,  -   ,  199 
+Public Library,Social and Culture,  523 ,  -   ,  -   ,  -   ,  -   ,  1 ,  -   ,  523 
+Public Library-Distance,Social and Culture,"  24,328 ",  -   ,  -   ,  -   ,  5 ,  15 ,  -   ,  199 
+Assembly Polling Station,Social and Culture,"  6,165 ",  -   ,  1 ,  1 ,  1 ,  1 ,  676 ,  -   
+Assembly Polling Station-Distance,Social and Culture,"  83,658 ",  -   ,  13 ,  13 ,  13 ,  15 ,  477 ,  199 
+Wheat,Agriculture,"  6,267 ",  -   ,  1 ,  1 ,  1 ,  1 ,  574 ,  -   
+Rice,Agriculture,"  4,092 ",  -   ,  -   ,  1 ,  1 ,  1 ,  -   ,  -   
+Musturd,Agriculture,"  2,021 ",  -   ,  -   ,  -   ,  1 ,  1 ,  -   ,  -   
+Others,Agriculture,"  5,625 ",  -   ,  1 ,  1 ,  1 ,  1 ,"  1,216 ",  -   
+Agri Tools,Industry,  292 ,  1 ,  1 ,  1 ,  1 ,  1 ,  -   ,  -   
+ATTA CHAKKI,Industry,"  3,544 ",  1 ,  1 ,  1 ,  1 ,  1 ,  -   ,  -   
+Others,Industry,  846 ,  1 ,  1 ,  1 ,  1 ,  1 ,  -   ,  -   
+Oil Mills,Industry,  373 ,  1 ,  1 ,  1 ,  1 ,  1 ,  -   ,  -   
+Rice Mills,Industry,  932 ,  -   ,  -   ,  -   ,  -   ,  1 ,  -   ,  932 
+Forest Area,Agriculture,"  24,413 ",  -   ,  -   ,  -   ,  -   ,"  4,682 ",  -   ,  383 
+Area under Non-Agricultural Uses,Agriculture,"  511,933 ",  -   ,  24 ,  48 ,  92 ,"  2,050 ",  -   ,  463 
+Barren & Un-cultivable Land Area,Agriculture,"  24,987 ",  -   ,  -   ,  -   ,  -   ,"  1,417 ",  -   ,  674 
+Permanent Pastures and Other Grazing Land Area,Agriculture,"  4,540 ",  -   ,  -   ,  -   ,  -   ,  418 ,  -   ,  298 
+Land Under Miscellaneous Tree Crops etc. Area,Agriculture,"  5,591 ",  -   ,  -   ,  -   ,  -   ,"  1,000 ",  -   ,  532 
+Culturable Waste Land Area,Agriculture,"  36,981 ",  -   ,  -   ,  -   ,  2 ,  424 ,  -   ,"  1,231 "
+Fallows Land other than Current Fallows Area,Agriculture,"  4,409 ",  -   ,  -   ,  -   ,  -   ,"  1,179 ",  -   ,  173 
+Current Fallows Area,Agriculture,"  27,888 ",  -   ,  -   ,  -   ,  -   ,"  1,196 ",  -   ,  830 
+Net Area Sown,Agriculture,"  3,554,893 ",  -   ,  167 ,  318 ,  649 ,"  12,456 ",  -   ,  505 
+Unirrigated Land Area,Agriculture,"  442,585 ",  (60),  -   ,  -   ,  29 ,"  5,219 ",  1 ,"  1,230 "
+Area Irrigated by Source,Agriculture,"  3,112,308 ",  -   ,  143 ,  283 ,  566 ,"  11,925 ",  -   ,  497 
+Canals Area,Agriculture,"  1,465,365 ",  -   ,  -   ,  -   ,  215 ,"  11,925 ",  -   ,  952 
+Wells/Tube Wells Area,Agriculture,"  1,637,130 ",  -   ,  59 ,  158 ,  308 ,"  6,480 ",  -   ,  470 
+Tanks/Lakes Area,Agriculture,"  2,439 ",  -   ,  -   ,  -   ,  -   ,  450 ,  -   ,  61 
+Waterfall Area,Agriculture,  30 ,  -   ,  -   ,  -   ,  -   ,  20 ,  -   ,  6 
+Other Source (specify) Area,Agriculture,"  7,344 ",  -   ,  -   ,  -   ,  -   ,  500 ,  -   ,  116 

@@ -1,0 +1,146 @@
+
+```{r}
+#read data
+setwd("C:/Users/vishrti/Desktop/ML webinar")
+library(openxlsx)
+dhcb<-read.xlsx("DCHB_Village_Release_0600 v1.xlsx")
+```
+```{r}
+dim(dhcb)
+colnames(dhcb)
+dhcb_social<-dhcb[,c(2:8,114:135)]
+colnames(dhcb_social)
+
+#Inversing Distance columns
+dhcb_social$Distance<-15- dhcb_social$Distance
+dhcb_social$Distance.1<-15- dhcb_social$Distance.1
+dhcb_social$Distance.2<-15- dhcb_social$Distance.2
+dhcb_social$Distance.3<-15- dhcb_social$Distance.3
+dhcb_social$Distance.4<-15- dhcb_social$Distance.4
+dhcb_social$Distance.5<-15- dhcb_social$Distance.5
+dhcb_social$Distance.6<-15- dhcb_social$Distance.6
+dhcb_social$Distance.7<-15- dhcb_social$Distance.7
+dhcb_social$Distance.8<-15- dhcb_social$Distance.8
+dhcb_social$Distance.9<-15- dhcb_social$Distance.9
+dhcb_social$Distance.10<-15- dhcb_social$Distance.10
+
+dim(dhcb_social)
+dhcb_social_small<-dhcb_social[dhcb_social$Total.Population.of.Village<1000,]
+dhcb_social_medium<-filter(dhcb_social, Total.Population.of.Village >= 1000 & Total.Population.of.Village <= 2500)
+
+dhcb_social_high<-dhcb_social[dhcb_social$Total.Population.of.Village>2500,]
+
+
+dim(dhcb_social_small)
+dim(dhcb_social_medium)
+dim(dhcb_social_high)
+
+summary(dhcb_social_small)
+
+dhcb_social_small$Distance = ifelse(is.na(dhcb_social_small$Distance),12.78,dhcb_social_small$Distance) #because mean is 12.78
+
+
+colnames(dhcb_social_small)
+
+```
+
+```{r}
+dhcb_social_small.Scaled <- scale(dhcb_social_small[,3:29])
+dhcb_social_medium.Scaled <- scale(dhcb_social_medium[,3:29])
+dhcb_social_high.Scaled <- scale(dhcb_social_high[,3:29])
+
+
+colnames(dhcb_social_high.Scaled)
+
+head(dhcb_social_medium.Scaled)
+str(dhcb_social_medium.Scaled)
+
+
+sum(is.na(dhcb_social_medium.Scaled))
+
+```
+```{r}
+head(dhcb_social_small.Scaled)
+str(dhcb_social_small.Scaled)
+
+
+sum(is.na(dhcb_social_small.Scaled))
+```
+```{r}
+head(dhcb_social_high.Scaled)
+str(dhcb_social_high.Scaled)
+
+
+sum(is.na(dhcb_social_high.Scaled))
+```
+
+```{r}
+# removing columns which have 0 variance for this set of data
+
+dhcb_social_small.Scaled1<-dhcb_social_small.Scaled[,-c(22)]
+
+dhcb_social_medium.Scaled1<-dhcb_social_medium.Scaled[,-c(6,7)]
+
+dhcb_social_high.Scaled1<-dhcb_social_high.Scaled[,-c(6,7)]
+
+dim(dhcb_social_small.Scaled1)
+dim(dhcb_social_medium.Scaled1)
+dim(dhcb_social_high.Scaled1)
+```
+
+
+```{r}
+
+wssplot <- function(data, nc=15, seed=3110){
+  wss <- (nrow(data)-1)*sum(apply(data,2,var))
+  for (i in 2:nc){
+    set.seed(seed)
+    wss[i] <- sum(kmeans(data, centers=i)$withinss)}
+  plot(1:nc, wss, type="b", xlab="Number of Clusters",
+       ylab="Within groups sum of squares")}
+
+
+wssplot(dhcb_social_small.Scaled1, nc=5)
+wssplot(dhcb_social_medium.Scaled1, nc=5)
+wssplot(dhcb_social_high.Scaled1, nc=5)
+
+
+```
+
+```{r}
+kmeans.clus1 = kmeans(x=dhcb_social_small.Scaled1, centers = 4, nstart = 3)
+
+kmeans.clus2 = kmeans(x=dhcb_social_medium.Scaled1, centers = 4, nstart = 3)
+
+kmeans.clus3 = kmeans(x=dhcb_social_high.Scaled1, centers = 4, nstart = 3)
+
+dhcb_social_small$Clusters <- kmeans.clus1$cluster
+
+dhcb_social_medium$Clusters <- kmeans.clus2$cluster
+
+dhcb_social_high$Clusters <- kmeans.clus3$cluster
+
+aggr_social_small = aggregate(dhcb_social_small[,-c(1,2,24)],list(dhcb_social_small$Clusters),mean)
+aggr_social_medium =aggregate(dhcb_social_medium[,-c(1,2,8,9)],list(dhcb_social_medium$Clusters),mean)
+
+aggr_social_high =aggregate(dhcb_social_high[,-c(1,2,8,9)],list(dhcb_social_high$Clusters),mean)
+
+
+
+aggr_social_small
+
+
+```
+
+```{r}
+write.csv(dhcb_social_small,file="dhcb_social_small_rmd.csv")
+write.csv(dhcb_social_medium,file="dhcb_social_medium_rmd.csv")
+write.csv(dhcb_social_high,file="dhcb_social_high_rmd.csv")
+
+
+
+write.csv(aggr_social_small,file="dhcb_social_small1_rmd.csv")
+write.csv(aggr_social_medium,file="dhcb_social_medium1_rmd.csv")
+write.csv(aggr_social_high,file="dhcb_social_high1_rmd.csv")
+
+```

@@ -1,0 +1,397 @@
+Label,New Label,Status,Description
+State Code,Drop,Drop,No Statistical Inference
+State Name,Drop,Drop,No Statistical Inference
+District Code,Drop,Drop,No Statistical Inference
+District Name,District Name,Yes,
+Sub District Code,Drop,Drop,No Statistical Inference
+Sub District Name,Drop,Drop,No Statistical Inference
+Village Code,Drop,Drop,No Statistical Inference
+Village Name,Village Name,Yes,
+CD Block Code,Drop,Drop,No Statistical Inference
+CD Block Name,Drop,Drop,No Statistical Inference
+Gram Panchayat Code,Drop,Drop,No Statistical Inference
+Gram Panchayat Name,Drop,Drop,No Statistical Inference
+Reference Year,Drop,Drop,No Statistical Inference
+Sub District Head Quarter (Name),Drop,Drop,No Statistical Inference
+Sub District Head Quarter (Distance in km),Drop,Drop,No Statistical Inference
+District Head Quarter  (Name),Drop,Drop,No Statistical Inference
+District Head Quarter  (Distance in km),Drop,Drop,No Statistical Inference
+Nearest Statutory Town  (Name),Drop,Drop,No Statistical Inference
+Nearest Statutory Town (Distance in km),Drop,Drop,No Statistical Inference
+Within the State/UT (Name),Drop,Drop,No Statistical Inference
+Within the State/UT (Distance in km),Drop,Drop,No Statistical Inference
+"Outside the State/UT, if nearest one is not within the State/UT (Name)",Drop,Drop,No Statistical Inference
+"Outside the State/UT distance, if nearest one is not within the State/UT (Distance in km)",Drop,Drop,No Statistical Inference
+Total Geographical Area (in Hectares),Total Area,Yes,
+Total   Households ,Households,Yes,
+Total Population of Village,Population,Yes,
+Total Male Population of Village,Male Population,Yes,
+Total Female Population of Village,Female Population,Yes,
+Total Scheduled Castes Population of Village,Drop,Drop,No Statistical Inference
+Total Scheduled Castes  Male Population of Village,Drop,Drop,No Statistical Inference
+Total Scheduled Castes  Female Population of Village,Drop,Drop,No Statistical Inference
+Total Scheduled Tribes Population of Village,Drop,Drop,No Statistical Inference
+Total Scheduled Tribes  Male Population of Village,Drop,Drop,No Statistical Inference
+Total Scheduled Tribes  Female Population of Village,Drop,Drop,No Statistical Inference
+Govt Pre-Primary School (Nursery/LKG/UKG) (Status A(1)/NA(2)),Primary School,Merge,All values '1' represent Available and '0' represents Not Available
+Govt  Pre - Primary School (Nursery/LKG/UKG) (Numbers),Primary School,Merge,All values '1' represent Available and '0' represents Not Available
+Private Pre - Primary School (Nursery/LKG/UKG) (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Private Pre - Primary School (Nursery/LKG/UKG) (Numbers),Primary School,Merge,All values '1' represent Available and '0' represents Not Available
+Nearest Facility Status (Govt(1)/Private(2)) ,Drop,Drop,No Statistical Inference
+Nearest Village/Town Name,Drop,Drop,No Statistical Inference
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Drop,Drop,No Statistical Inference
+Govt Primary School (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Govt Primary School (Numbers),Primary School,Merge,All values '1' represent Available and '0' represents Not Available
+Private Primary School (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Private  Primary School (Numbers),Primary School,Merge,All values '1' represent Available and '0' represents Not Available
+Nearest Facility Status (Govt(1)/Private(2)) ,Drop,Drop,No Statistical Inference
+Nearest Village/Town Name,Drop,Drop,No Statistical Inference
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Govt Middle  School (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Govt  Middle School (Numbers),Middle Schools,Merge,All values '1' represent Available and '0' represents Not Available
+Private Middle  School (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Private Middle School (Numbers),Middle Schools,Merge,All values '1' represent Available and '0' represents Not Available
+Nearest Facility Status (Govt(1)/Private(2)) ,Drop,Drop,No Statistical Inference
+Nearest Village/Town Name,Drop,Drop,No Statistical Inference
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Govt Secondary School (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Govt  Secondary School (Numbers),Secondary Schools,Merge,All values '1' represent Available and '0' represents Not Available
+Private Secondary School (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Private Secondary  School (Numbers),Secondary Schools,Merge,All values '1' represent Available and '0' represents Not Available
+Nearest Facility Status (Govt(1)/Private(2)) ,Drop,Drop,No Statistical Inference
+Nearest Village/Town Name,Drop,Drop,No Statistical Inference
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Govt Senior Secondary School (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Govt Senior Secondary School (Numbers),Senior Secondary Schools,Merge,All values '1' represent Available and '0' represents Not Available
+Private Senior Secondary School (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Private Senior Secondary  School (Numbers),Senior Secondary Schools,Merge,All values '1' represent Available and '0' represents Not Available
+Nearest Facility Status (Govt(1)/Private(2)) ,Drop,Drop,No Statistical Inference
+Nearest Village/Town Name,Drop,Drop,No Statistical Inference
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Govt  Arts and Science Degree College (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Govt  Arts and Science Degree College (Numbers),Arts and Science Degree College,Merge,All values '1' represent Available and '0' represents Not Available
+Private  Arts and Science Degree College (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Private  Arts and Science Degree College (Numbers),Arts and Science Degree College,Merge,All values '1' represent Available and '0' represents Not Available
+Nearest Facility Status (Govt(1)/Private(2)) ,Drop,Drop,No Statistical Inference
+Nearest Village/Town Name,Drop,Drop,No Statistical Inference
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Govt Engineering College (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Govt Engineering College (Numbers),Engineering College,Merge,All values '1' represent Available and '0' represents Not Available
+Private Engineering College (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Private Engineering College (Numbers),Engineering College,Merge,All values '1' represent Available and '0' represents Not Available
+Nearest Facility Status (Govt(1)/Private(2)) ,Drop,Drop,No Statistical Inference
+Nearest Village/Town Name,Drop,Drop,No Statistical Inference
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Govt Medicine College (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Govt Medicine  College (Numbers),Medicine College,Merge,All values '1' represent Available and '0' represents Not Available
+Private Medicine  College (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Private Medicine College (Numbers),Medicine College,Merge,All values '1' represent Available and '0' represents Not Available
+Nearest Facility Status (Govt(1)/Private(2)) ,Drop,Drop,No Statistical Inference
+Nearest Village/Town Name,Drop,Drop,No Statistical Inference
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Govt Management Institute (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Govt Management Institute (Numbers),Management Institute,Merge,All values '1' represent Available and '0' represents Not Available
+Private Management Institute (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Private Management Institute (Numbers),Management Institute,Merge,All values '1' represent Available and '0' represents Not Available
+Nearest Facility Status (Govt(1)/Private(2)) ,Drop,Drop,No Statistical Inference
+Nearest Village/Town Name,Drop,Drop,No Statistical Inference
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Govt Polytechnic (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Govt Polytechnic (Numbers),Vocational Training School/ITI,Merge,All values '1' represent Available and '0' represents Not Available
+Private Polytechnic (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Private Polytechnic (Numbers),Vocational Training School/ITI,Merge,All values '1' represent Available and '0' represents Not Available
+Nearest Facility Status (Govt(1)/Private(2)) ,Drop,Drop,No Statistical Inference
+Nearest Village/Town Name,Drop,Drop,No Statistical Inference
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Drop,Drop,No Statistical Inference
+Govt Vocational Training School/ITI (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Govt Vocational Training School/ITI (Numbers),Vocational Training School/ITI,Merge,All values '1' represent Available and '0' represents Not Available
+Private Vocational Training School/ITI (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Private Vocational Training School/ITI (Numbers),Vocational Training School/ITI,Merge,All values '1' represent Available and '0' represents Not Available
+Nearest Facility Status (Govt(1)/Private(2)) ,Drop,Drop,No Statistical Inference
+Nearest Village/Town Name,Drop,Drop,No Statistical Inference
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Government Non Formal Training Centre (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Government Non Formal Training Centre (Numbers),Non Formal Training Centre,Merge,All values '1' represent Available and '0' represents Not Available
+Private Non Formal Training Centre (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Private Non Formal Training Centre (Numbers),Non Formal Training Centre,Merge,All values '1' represent Available and '0' represents Not Available
+Nearest Facility Status (Govt(1)/Private(2)) ,Drop,Drop,No Statistical Inference
+Nearest Village/Town Name,Drop,Drop,No Statistical Inference
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Government School For Disabled (Status A(1)/NA(2)),Drop,Drop,All Values False
+Government School For Disabled (Numbers),Drop,Drop,All Values False
+Private School For Disabled ( Status A(1)/NA(2)),Drop,Drop,All Values False
+Private School For Disabled (Numbers),Drop,Drop,All Values False
+Nearest Facility Status (Govt(1)/Private(2)) ,Drop,Drop,No Statistical Inference
+Nearest Village/Town Name,Drop,Drop,No Statistical Inference
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Government Others (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Government Others (Numbers),Drop,Drop,No Statistical Inference
+Private Others (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Private Others (Numbers),Drop,Drop,No Statistical Inference
+Nearest Facility Status (Govt(1)/Private(2)) ,Drop,Drop,No Statistical Inference
+Nearest Village/Town Name,Drop,Drop,No Statistical Inference
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Community Health Centre (Numbers),Community Health Centre,Yes,
+Community Health Centre Doctors Total Strength (Numbers),Positions (Doctors & Support),Merge,All values '1' represent Available and '0' represents Not Available
+Community Health Centre Doctors In Position (Numbers),Required Strength (Doctors & Support),Merge,All values '1' represent Available and '0' represents Not Available
+Community Health Centre Para Medical  Staff Total Strength (Numbers),Positions (Doctors & Support),Merge,All values '1' represent Available and '0' represents Not Available
+Community Health Centre Para Medical Staff In Position (Numbers),Required Strength (Doctors & Support),Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Health Centre Distance,Yes,
+Primary Health Centre (Numbers),Primary Health Centre,Yes,
+Primary Health Centre  Doctors Total Strength (Numbers),Primary Health Centre Doctors Strength,Merge,All values '1' represent Available and '0' represents Not Available
+Primary Health  Centre Doctors In Position (Numbers),Primary Health Centre Doctors In Position,Merge,All values '1' represent Available and '0' represents Not Available
+Primary  Health Centre Para Medical  Staff Total Strength (Numbers),Primary Health Centre Doctors Strength,Merge,All values '1' represent Available and '0' represents Not Available
+Primary  Health Centre Para Medical Staff In Position (Numbers),Primary Health Centre Doctors In Position,Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Primary Heallth Sub Centre (Numbers),Primary Heallth Sub Centre,Yes,
+Primary Heallth Sub Centre Doctors Total Strength (Numbers),Primary Heallth Sub Centre Doctors Strength,Merge,All values '1' represent Available and '0' represents Not Available
+Primary Heallth Sub Centre Doctors In Position (Numbers),Primary Heallth Sub Centre Doctors In Position,Merge,All values '1' represent Available and '0' represents Not Available
+Primary Heallth Sub Centre Para Medical  Staff Total Strength (Numbers),Primary Heallth Sub Centre Doctors Strength,Merge,All values '1' represent Available and '0' represents Not Available
+Primary Heallth Sub Centre Para Medical Staff In Position (Numbers),Primary Heallth Sub Centre Doctors In Position,Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Maternity And Child Welfare Centre (Numbers),Maternity And Child Welfare Centre,Yes,
+Maternity And Child Welfare Centre Doctors Total Strength (Numbers),Maternity And Child Welfare Centre Doctors Strength,Merge,All values '1' represent Available and '0' represents Not Available
+Maternity And Child Welfare Centre Doctors In Position (Numbers),Maternity And Child Welfare Centre Doctors In Position,Merge,All values '1' represent Available and '0' represents Not Available
+Maternity And Child Welfare Centre Para Medical  Staff Total Strength (Numbers),Maternity And Child Welfare Centre Doctors Strength,Merge,All values '1' represent Available and '0' represents Not Available
+Maternity And Child Welfare Centre Para Medical Staff In Position (Numbers),Maternity And Child Welfare Centre Doctors In Position,Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+TB Clinic (Numbers),TB Clinic,Yes,
+TB Clinic Doctors Total Strength (Numbers),TB Clinic Doctors Strength,Merge,All values '1' represent Available and '0' represents Not Available
+TB Clinic Doctors In Position (Numbers),TB Clinic Doctors In Position,Merge,All values '1' represent Available and '0' represents Not Available
+TB Clinic Para Medical Para Medical  Staff Total Strength (Numbers),TB Clinic Doctors Strength,Merge,All values '1' represent Available and '0' represents Not Available
+TB Clinic Para Medical Para Medical Staff In Position (Numbers),TB Clinic Doctors In Position,Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Hospital Allopathic (Numbers),Hospital Allopathic,Yes,
+Hospital Allopathic Doctors Total Strength (Numbers),Hospital Allopathic Doctors Strength,Merge,All values '1' represent Available and '0' represents Not Available
+Hospital Allopathic Doctors In Position (Numbers),Hospital Allopathic Doctors In Position,Merge,All values '1' represent Available and '0' represents Not Available
+Hospital Allopathic Para Medical  Staff Total Strength (Numbers),Hospital Allopathic Doctors Strength,Merge,All values '1' represent Available and '0' represents Not Available
+Hospital Allopathic Para Medical Staff In Position (Numbers),Hospital Allopathic Doctors In Position,Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Hospiltal Alternative Medicine (Numbers),Hospiltal Alternative Medicine,Yes,
+Hospiltal Alternative Medicine Doctors Total Strength (Numbers),Hospiltal Alternative Medicine Doctors Strength,Merge,All values '1' represent Available and '0' represents Not Available
+Hospiltal Alternative Medicine Doctors In Position (Numbers),Hospiltal Alternative Medicine Doctors In Position,Merge,All values '1' represent Available and '0' represents Not Available
+Hospiltal Alternative Medicine Para Medical  Staff Total Strength (Numbers),Hospiltal Alternative Medicine Doctors Strength,Merge,All values '1' represent Available and '0' represents Not Available
+Hospiltal Alternative Medicine Para Medical Staff In Position (Numbers),Hospiltal Alternative Medicine Doctors In Position,Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Dispensary (Numbers),Dispensary,Yes,
+Dispensary Doctors Total Strength (Numbers),Dispensary Doctors Strength,Merge,All values '1' represent Available and '0' represents Not Available
+Dispensary Doctors In Position (Numbers),Dispensary Doctors In Position,Merge,All values '1' represent Available and '0' represents Not Available
+Dispensary Para Medical  Staff Total Strength (Numbers),Dispensary Doctors Strength,Merge,All values '1' represent Available and '0' represents Not Available
+Dispensary Para Medical Staff In Position (Numbers),Dispensary Doctors In Position,Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Veterinary Hospital (Numbers),Veterinary Hospital,Yes,
+Veterinary Hospital Doctors Total Strength (Numbers),Veterinary Hospital Doctors Strength,Merge,All values '1' represent Available and '0' represents Not Available
+Veterinary Hospital Doctors In Position (Numbers),Veterinary Hospital Doctors In Position,Merge,All values '1' represent Available and '0' represents Not Available
+Veterinary Hospital Para Medical  Staff Total Strength (Numbers),Veterinary Hospital Doctors Strength,Merge,All values '1' represent Available and '0' represents Not Available
+Veterinary Hospital Para Medical Staff In Position (Numbers),Veterinary Hospital Doctors In Position,Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Mobile Health Clinic (Numbers),Mobile Health Clinic,Yes,
+Mobile Health Clinic Doctors Total Strength (Numbers),Mobile Health Clinic Doctors Strength,Merge,All values '1' represent Available and '0' represents Not Available
+Mobile Health Clinic Doctors In Position (Numbers),Mobile Health Clinic Doctors In Position,Merge,All values '1' represent Available and '0' represents Not Available
+Mobile Health Clinic Para Medical  Staff Total Strength (Numbers),Mobile Health Clinic Doctors Strength,Merge,All values '1' represent Available and '0' represents Not Available
+Mobile Health Clinic Para Medical Staff In Position(Numbers),Mobile Health Clinic Doctors In Position,Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Family Welfare Centre (Numbers),Family Welfare Centre,Yes,
+Family Welfare Centre Doctors Total Strength (Numbers),Family Welfare Centre Doctors Strength,Merge,All values '1' represent Available and '0' represents Not Available
+Family Welfare Centre Doctors In Position (Numbers),Family Welfare Centre Doctors In Position,Merge,All values '1' represent Available and '0' represents Not Available
+Family Welfare Centre Para Medical  Staff Total Strength (Numbers),Family Welfare Centre Doctors Strength,Merge,All values '1' represent Available and '0' represents Not Available
+Family Welfare Centre Para Medical Staff In Position (Numbers),Family Welfare Centre Doctors In Position,Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Non Government Medical facilities Out Patient (Numbers),Drop,Drop,No Statistical Inference
+Non Government Medical facilities In And Out Patient (Numbers),Drop,Drop,No Statistical Inference
+Non Government Medical facilities Charitable (Numbers),Drop,Drop,No Statistical Inference
+Non Government Medical facilities Medical Prctitioner with MBBS Degree (Numbers) ,Drop,Drop,No Statistical Inference
+Non Government Medical facilities Medical Prctitioner with other Degree (Numbers)  ,Drop,Drop,No Statistical Inference
+Non Government Medical facilities Medical Practitioner with no  Degree (Numbers) ,Drop,Drop,No Statistical Inference
+Non Government Medical facilities Traditional Practitioner and Faith  Healer (Numbers) ,Drop,Drop,No Statistical Inference
+Non Government Medical facilities Medicine Shop (Numbers) ,Drop,Drop,No Statistical Inference
+Non Government Medical facilities Others (Numbers),Drop,Drop,No Statistical Inference
+Tap Water-Treated (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Tap Water-Treated Functioning All round the year (Status A(1)/NA(2)),Tap Water-Treated,Yes,
+Tap Water-Treated Functioning in Summer months (April-September) (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Tap Water Untreated (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Tap Water Untreated Functioning All round the year (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Tap Water Untreated Functioning in Summer months (April-September) (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Covered Well (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Covered Well Functioning All round the year (Status A(1)/NA(2)),Well Functioning,Merge,All values '1' represent Available and '0' represents Not Available
+Covered Well Functioning in Summer months (April-September) (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Uncovered  Well (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Uncovered  Well Functioning All round the year (Status A(1)/NA(2)),Well Functioning,Merge,All values '1' represent Available and '0' represents Not Available
+Uncovered  Well Functioning in Summer months (April-September) (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Hand Pump (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Hand Pump Functioning All round the year (Status A(1)/NA(2)),Hand Pump Functioning,Yes,
+Hand Pump Functioning in Summer months (April-September) (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Tube Wells/Borehole (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Tube Wells/Borehole Functioning All round the year (Status A(1)/NA(2)),Tube Wells/Borehole Functioning,Yes,
+Tube Wells/Borehole Functioning in Summer months (April-September) (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Spring (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Spring Functioning All round the year (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Spring Functioning in Summer months (April-September) (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+River/Canal (Status A(1)/NA(2)),River/Canal Status,Drop,No Statistical Inference
+River/Canal Functioning All round the year (Status A(1)/NA(2)),River/Canal Functioning All round the year,Yes,
+River/Canal Functioning in Summer months (April-September) (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Tank/Pond/Lake (Status A(1)/NA(2)),Drop,Drop,All Values False
+Tank/Pond/Lake Functioning All round the year (Status A(1)/NA(2)),Tank/Pond/Lake Functioning All round the year,Yes,
+Tank/Pond/Lake Functioning in Summer months (April-September) (Status A(1)/NA(2)),Drop,Drop,All Values False
+Others (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Others Functioning All round the year (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Others Functioning in Summer months (April-September) (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Closed Drainage (Status A(1)/NA(2)),Closed Drainage,Yes,
+ Open Drainage (Status A(1)/NA(2)),Open Drainage,Yes,
+No  Drainage (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Open Pucca Drainage Covered with Tiles Slabs (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Open Pucca Drainage Uncovered (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Open Kuccha Drainage (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Whether Drain water is discharged directly into water bodies or to sewar plant (For Water Bodies-1/Sewar Plants-2),Water Treatment - Sewar Plants,Yes,
+ Is the Area Covered under Total Sanitation Campaign (TSC)? (Status A(1)/NA(2)),Sanitation Campaign (TSC),Yes,
+Community Toilet Complex (including Bath) for General Public (Status A(1)/NA(2)),Community Toilet Complex,Yes,
+Community Toilet Complex (excluding Bath) for General Public (Status A(1)/NA(2)),Community Toilet Complex (excluding Bath) for General Public,Yes,
+Rural Production Centres or Sanitary hardware outlet availability near the village (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Rural Production mart or Sanitary hardware outlet availability near the village (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Community waste disposal system after house to house collection (Status A(1)/NA(2)),Community waste disposal system after house to house collection,Yes,
+Community Bio-gas or recycle of waste for production use (Status A(1)/NA(2)),Community Bio-gas or recycle of waste for production use,Yes,
+No System (Garbage on road/street) (Status A(1)/NA(2)),No System (Garbage on road/street),Yes,
+Post Office (Status A(1)/NA(2)),Post Office or Sub Post Office,Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Sub Post Office (Status A(1)/NA(2)),Post Office or Sub Post Office,Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Post And Telegraph Office (Status A(1)/NA(2)),Drop,Drop,All Values False
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Village Pin Code (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+PIN Code,Drop,Drop,No Statistical Inference
+Telephone (landlines) (Status A(1)/NA(2)),Telephone,Yes,
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Public Call Office /Mobile (PCO) (Status A(1)/NA(2)),PCO,Yes,
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Mobile Phone Coverage (Status A(1)/NA(2)),Drop,Drop,All Values True
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Internet Cafes / Common Service Centre (CSC) (Status A(1)/NA(2)),Internet Cafes,Yes,
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Private Courier Facility (Status A(1)/NA(2)),Private Courier Facility,Yes,
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Public Bus Service (Status A(1)/NA(2)),Public Bus Service,Yes,
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Private Bus Service (Status A(1)/NA(2)),Private Bus Service,Yes,
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Railway Station (Status A(1)/NA(2)),Railway Station,Yes,
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Auto/Modified Autos (Status A(1)/NA(2)),"Other Transport - Auto, Van Rickshaw etc.",Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Taxi  (Status A(1)/NA(2)),"Other Transport - Auto, Van Rickshaw etc.",Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Vans (Status A(1)/NA(2)),"Other Transport - Auto, Van Rickshaw etc.",Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Tractors (Status A(1)/NA(2)),"Other Transport - Auto, Van Rickshaw etc.",Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Cycle-pulled Rickshaws   (manual driven) (Status A(1)/NA(2)),"Other Transport - Auto, Van Rickshaw etc.",Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Cycle-pulled Rickshaws (machine driven) (Status A(1)/NA(2)),"Other Transport - Auto, Van Rickshaw etc.",Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Carts Drivens by Animals (Status A(1)/NA(2)),"Other Transport - Auto, Van Rickshaw etc.",Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Sea/River/Ferry Service (Status A(1)/NA(2)),Drop,Drop,All Values False
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+National Highway (Status A(1)/NA(2)),Highways,Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+State Highway (Status A(1)/NA(2)),Highways,Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Major District Road (Status A(1)/NA(2)),Highways,Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Other District Road (Status A(1)/NA(2)),Other Pucca Roads,Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Black Topped (pucca) Road (Status A(1)/NA(2)),Other Pucca Roads,Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Gravel (kuchha) Roads (Status A(1)/NA(2)),Kuchha Roads,Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Water Bounded Macadam (Status A(1)/NA(2)),Drop,Drop,All Values False
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+All Weather Road (Status A(1)/NA(2)),Kuchha Roads,Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Navigable Waterways (River/Canal) (Status A(1)/NA(2)),Drop,Drop,All Values False
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Foothpath (Status A(1)/NA(2)),Drop,Drop,All Values True
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+ATM (Status A(1)/NA(2)),Drop,Drop,No Statistical Inference
+Nearest Facility Distance (in Km) ,Drop,Drop,No Statistical Inference
+Commercial Bank (Status A(1)/NA(2)),Banks on any Kind,Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Cooperative Bank (Status A(1)/NA(2)),Banks on any Kind,Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Agricultural Credit Societies (Status A(1)/NA(2)),Agricultural Credit Societies,Yes,
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Self - Help Group (SHG) (Status A(1)/NA(2)),Banks on any Kind,Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Public Distribution System (PDS) Shop (Status A(1)/NA(2)),Banks on any Kind,Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Mandis/Regular Market (Status A(1)/NA(2)),Mandis/Regular Market,Yes,
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Weekly Haat (Status A(1)/NA(2)),Weekly Haat,Yes,
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Agricultural Marketing Society (Status A(1)/NA(2)),Agricultural Marketing Society,Yes,
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Nutritional Centres-ICDS (Status A(1)/NA(2)),Drop,Drop,All Values True
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Nutritional Centres-Anganwadi Centre (Status A(1)/NA(2)),Drop,Drop,All Values True
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Nutritional Centres-Others (Status A(1)/NA(2)),Drop,Drop,All Values True
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+ASHA (Status A(1)/NA(2)),ASHA,Yes,
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Community Centre with/without TV (Status A(1)/NA(2)),Community Centre with/without TV,Yes,
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Sports Field (Status A(1)/NA(2)),Sports Field,Yes,
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Sports Club/Recreation Centre (Status A(1)/NA(2)),Sports Club/Recreation Centre,Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Cinema/Video Hall (Status A(1)/NA(2)),Sports Club/Recreation Centre,Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Public Library (Status A(1)/NA(2)),Public Library,Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Public Reading Room (Status A(1)/NA(2)),Public Library,Merge,All values '1' represent Available and '0' represents Not Available
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Daily Newspaper Supply (Status A(1)/NA(2)),Drop,Drop,All Values True
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Assembly Polling Station (Status A(1)/NA(2)),Assembly Polling Station,Yes,
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Distance,Yes,
+Birth and Death Registration Office (Status A(1)/NA(2)),Drop,Drop,All Values True
+"(If not available within the village, the distance range  code  of nearest place where  facility is available is given viz;  a for < 5 Kms, b for 5-10 Kms and c  for 10+ kms ).  ",Drop,Drop,No Statistical Inference
+Power Supply For Domestic Use  (Status A(1)/NA(2)),Drop,Drop,All Values True
+Power Supply For Domestic Use Summer (April-Sept.) per day (in Hours),Drop,Drop,All Values True
+Power Supply For Domestic Use Winter (Oct.-March) per day (in Hours),Drop,Drop,All Values True
+Power Supply For Agriculture Use (Status A(1)/NA(2)),Drop,Drop,All Values True
+Power Supply For Agriculture Use Summer (April-Sept.) per day (in Hours),Drop,Drop,All Values True
+Power Supply For Agriculture Use Winter (Oct.-March)per day (in Hours),Drop,Drop,All Values True
+Power Supply For Commercial Use (Status A(1)/NA(2)),Drop,Drop,All Values True
+Power Supply For Commercial Use Summer (April-Sept.) per day (in Hours),Drop,Drop,All Values True
+Power Supply For Commercial Use Winter (Oct.-March) per day (in Hours),Drop,Drop,All Values True
+Power Supply For All Users (Status A(1)/NA(2)),Drop,Drop,All Values True
+Power Supply For All Users Summer (April-Sept.) per day (in Hours),Drop,Drop,All Values True
+Power Supply For All Users Winter (Oct.-March) per day (in Hours),Drop,Drop,All Values True
+Agricultural Commodities (First),Wheat,Merge,All values '1' represent Available and '0' represents Not Available
+Manufacturers Commodities (First),Rice,Merge,All values '1' represent Available and '0' represents Not Available
+Handicrafts Commodities (First),Musturd,Drop,No Statistical Inference
+Agricultural Commodities (Second),Others,Merge,All values '1' represent Available and '0' represents Not Available
+Manufacturers Commodities (Second),Agri Tools,Merge,All values '1' represent Available and '0' represents Not Available
+Handicrafts Commodities (Second),ATTA CHAKKI,Drop,No Statistical Inference
+Agricultural Commodities (Third),Others,Merge,All values '1' represent Available and '0' represents Not Available
+Manufacturers Commodities (Third),Oil Mills,Merge,All values '1' represent Available and '0' represents Not Available
+Handicrafts  Commodities (Third),Rice Mills,Drop,No Statistical Inference
+Forest Area (in Hectares),Forest Area,Yes,
+Area under Non-Agricultural Uses (in Hectares),Area under Non-Agricultural Uses,Yes,
+Barren & Un-cultivable Land Area (in Hectares),Barren & Un-cultivable Land Area,Yes,
+Permanent Pastures and Other Grazing Land Area (in Hectares),Permanent Pastures and Other Grazing Land Area,Yes,
+Land Under Miscellaneous Tree Crops etc. Area (in Hectares),Land Under Miscellaneous Tree Crops etc. Area,Yes,
+Culturable Waste Land Area (in Hectares),Culturable Waste Land Area,Yes,
+Fallows Land other than Current Fallows Area (in Hectares),Fallows Land other than Current Fallows Area,Yes,
+Current Fallows Area (in Hectares),Current Fallows Area,Yes,
+Net Area Sown (in Hectares),Net Area Sown,Yes,
+Total Unirrigated Land Area (in Hectares),Unirrigated Land Area,Yes,
+Area Irrigated by Source (in Hectares),Area Irrigated by Source,Yes,
+Canals Area (in Hectares),Canals Area,Yes,
+Wells/Tube Wells Area (in Hectares),Wells/Tube Wells Area,Yes,
+Tanks/Lakes Area (in Hectares),Tanks/Lakes Area,Yes,
+Waterfall Area (in Hectares),Waterfall Area,Yes,
+Other Source (specify) Area (in Hectares),Other Source (specify) Area,Yes,
+Nearest Town Name,Drop,Drop,No Statistical Inference
+Nearest Town Distance from Village (in Km.),Drop,Drop,No Statistical Inference

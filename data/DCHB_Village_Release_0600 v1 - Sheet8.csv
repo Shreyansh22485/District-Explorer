@@ -1,0 +1,61 @@
+Village Name,Bucket,6842,Minimum,Median,Maximum,Outlier - Min Count,Outlier - Max Count
+Primary School,Education,"  3,489 ",  -   ,  -   ,  12 ,  -   ,  219 
+Primary School-Distance,Education,"  59,865 ",  -   ,  10 ,  15 ,  -   ,  -   
+Middle Schools,Education,"  7,954 ",  -   ,  1 ,  15 ,  -   ,  46 
+Middle Schools-Distance,Education,"  78,065 ",  -   ,  13 ,  15 ,  527 ,  -   
+Secondary Schools,Education,"  5,011 ",  -   ,  -   ,  10 ,  -   ,  396 
+Secondary Schools-Distance,Education,"  68,245 ",  -   ,  10 ,  15 ,"  1,424 ",  -   
+Senior Secondary Schools,Education,"  2,618 ",  -   ,  -   ,  8 ,  -   ,"  1,669 "
+Senior Secondary Schools-Distance,Education,"  56,958 ",  -   ,  10 ,  15 ,  -   ,  -   
+Arts and Science Degree College,Education,  34 ,  -   ,  -   ,  2 ,  -   ,  32 
+Arts and Science Degree College-Distance,Education,"  21,245 ",  -   ,  -   ,  15 ,  -   ,  199 
+Engineering College,Education,  106 ,  -   ,  -   ,  4 ,  -   ,  95 
+Engineering College-Distance,Education,"  17,418 ",  -   ,  -   ,  15 ,  -   ,  199 
+Medicine College,Education,  10 ,  -   ,  -   ,  2 ,  -   ,  9 
+Medicine College-Distance,Education,"  8,073 ",  -   ,  -   ,  15 ,  -   ,"  1,038 "
+Management Institute,Education,  99 ,  -   ,  -   ,  3 ,  -   ,  88 
+Management Institute-Distance,Education,"  13,940 ",  -   ,  -   ,  15 ,  -   ,  199 
+Vocational Training School/ITI,Education,  86 ,  -   ,  -   ,  2 ,  -   ,  83 
+Vocational Training School/ITI-Distance,Education,"  18,258 ",  -   ,  -   ,  15 ,  -   ,  199 
+Non Formal Training Centre,Education,  24 ,  -   ,  -   ,  4 ,  -   ,  14 
+Non Formal Training Centre-Distance,Education,"  12,865 ",  -   ,  -   ,  15 ,  -   ,  199 
+School For Disabled,Education,  -   ,  -   ,  -   ,  -   ,  -   ,  -   
+School For Disabled-Distance,Education,"  8,970 ",  -   ,  -   ,  15 ,  -   ,"  1,223 "
+Tap Water-Treated,Infrastructure,"  6,642 ",  -   ,  1 ,  1 ,  199 ,  -   
+Closed Drainage,Infrastructure,  301 ,  -   ,  -   ,  1 ,  -   ,  301 
+Open Drainage,Infrastructure,"  6,389 ",  -   ,  1 ,  1 ,  452 ,  -   
+Water Treatment - Sewar Plants,Infrastructure,  740 ,  -   ,  -   ,  2 ,  -   ,  370 
+Sanitation Campaign (TSC),Infrastructure,"  6,335 ",  -   ,  1 ,  1 ,  506 ,  -   
+Community Toilet Complex,Infrastructure,  226 ,  -   ,  -   ,  1 ,  -   ,  226 
+Community Toilet Complex (excluding Bath) for General Public,Infrastructure,  329 ,  -   ,  -   ,  1 ,  -   ,  329 
+Community waste disposal system after house to house collection,Infrastructure,  322 ,  -   ,  -   ,  1 ,  -   ,  322 
+Community Bio-gas or recycle of waste for production use,Infrastructure,  167 ,  -   ,  -   ,  1 ,  -   ,  167 
+No System (Garbage on road/street),Infrastructure,"  4,896 ",  -   ,  1 ,  1 ,  -   ,  -   
+Public Bus Service,Transportation,"  6,259 ",  -   ,  1 ,  1 ,  582 ,  -   
+Public Bus Service-Distance,Transportation,"  83,468 ",  -   ,  13 ,  15 ,  383 ,  199 
+Private Bus Service,Transportation,"  4,402 ",  -   ,  1 ,  1 ,  -   ,  -   
+Private Bus Service-Distance,Transportation,"  71,405 ",  -   ,  13 ,  15 ,"  1,320 ",  -   
+Railway Station,Transportation,  166 ,  -   ,  -   ,  1 ,  -   ,  166 
+Railway Station-Distance,Transportation,"  24,310 ",  -   ,  -   ,  15 ,  -   ,  199 
+"Other Transport - Auto, Van Rickshaw etc.",Transportation,"  6,797 ",  -   ,  1 ,  2 ,  199 ,  155 
+"Other Transport - Auto, Van Rickshaw etc.-Distance",Transportation,"  84,948 ",  -   ,  13 ,  15 ,  155 ,  199 
+Highways,Infrastructure,"  9,551 ",  -   ,  1 ,  2 ,  -   ,  -   
+Highways-Distance,Infrastructure,"  56,983 ",  -   ,  13 ,  15 ,  -   ,  -   
+Other Pucca Roads,Infrastructure,"  6,586 ",  -   ,  1 ,  1 ,  255 ,  -   
+Other Pucca Roads-Distance,Infrastructure,"  85,640 ",  -   ,  13 ,  15 ,  56 ,  199 
+Kuchha Roads,Infrastructure,"  6,642 ",  -   ,  1 ,  1 ,  199 ,  -   
+Community Centre with/without TV,Social and Culture,  784 ,  -   ,  -   ,  1 ,  -   ,  784 
+Community Centre with/without TV-Distance,Social and Culture,"  33,525 ",  -   ,  5 ,  15 ,  -   ,  -   
+Sports Field,Social and Culture,"  2,062 ",  -   ,  -   ,  1 ,  -   ,  -   
+Sports Field-Distance,Social and Culture,"  48,190 ",  -   ,  5 ,  15 ,  -   ,  -   
+Sports Club/Recreation Centre,Social and Culture,  471 ,  -   ,  -   ,  1 ,  -   ,  471 
+Sports Club/Recreation Centre-Distance,Social and Culture,"  26,128 ",  -   ,  5 ,  15 ,  -   ,  199 
+Public Library,Social and Culture,  523 ,  -   ,  -   ,  1 ,  -   ,  523 
+Public Library-Distance,Social and Culture,"  24,328 ",  -   ,  -   ,  15 ,  -   ,  199 
+Assembly Polling Station,Social and Culture,"  6,165 ",  -   ,  1 ,  1 ,  676 ,  -   
+Assembly Polling Station-Distance,Social and Culture,"  83,658 ",  -   ,  13 ,  15 ,  477 ,  199 
+Agri Tools,Industry,  292 ,  1 ,  1 ,  1 ,  -   ,  -   
+ATTA CHAKKI,Industry,"  3,544 ",  1 ,  1 ,  1 ,  -   ,  -   
+Others,Industry,  846 ,  1 ,  1 ,  1 ,  -   ,  -   
+Oil Mills,Industry,  373 ,  1 ,  1 ,  1 ,  -   ,  -   
+Rice Mills,Industry,  932 ,  -   ,  -   ,  1 ,  -   ,  932 

@@ -1,0 +1,67 @@
+
+```{r}
+#read data
+setwd("C:/Users/vishrti/Desktop/ML webinar")
+library(openxlsx)
+dhcb<-read.csv("dhcb_education_high.csv")
+```
+```{r}
+dim(dhcb)
+colnames(dhcb)
+dhcb_education_high<-dhcb[,-c(1,31)]
+dim(dhcb_education_high)
+```
+
+```{r}
+dhcb_education_high.Scaled <- scale(dhcb_education_high[,3:29])
+head(dhcb_education_high.Scaled)
+
+str(dhcb_education_high.Scaled)
+
+
+sum(is.na(dhcb_education_high.Scaled))
+
+```
+
+```{r}
+# removing columns which have 0 variance for this set of data
+              
+dhcb_education_high.Scaled1<-dhcb_education_high.Scaled[,-c(25)]
+dim(dhcb_education_high.Scaled1)
+```
+
+
+```{r}
+
+wssplot <- function(data, nc=15, seed=3110){
+  wss <- (nrow(data)-1)*sum(apply(data,2,var))
+  for (i in 2:nc){
+    set.seed(seed)
+    wss[i] <- sum(kmeans(data, centers=i)$withinss)}
+  plot(1:nc, wss, type="b", xlab="Number of Clusters",
+       ylab="Within groups sum of squares")}
+
+wssplot(dhcb_education_high.Scaled1, nc=5)
+
+sum(is.na(dhcb_education_high.Scaled1))
+```
+
+```{r}
+kmeans.clus = kmeans(x=dhcb_education_high.Scaled1, centers = 4, nstart = 3)
+
+dhcb_education_high$Clusters <- kmeans.clus$cluster
+
+#aggr = aggregate(dhcb_education_high[,-c(1,2,8,9,10,28,29,30,44,45,46)],list(dhcb_education_high$Clusters),mean)
+aggr = aggregate(dhcb_education_high[,-c(1,2,27)],list(dhcb_education_high$Clusters),mean)
+
+aggr
+
+
+```
+
+```{r}
+write.csv(dhcb_education_high,file="dhcb_education_high_rmd.csv")
+
+write.csv(aggr,file="dhcb_education_high1_rmd.csv")
+
+```
