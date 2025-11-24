@@ -6,14 +6,12 @@ export default function About({ onBack }) {
     {
       name: 'Shreyansh Srivastav',
       email: 'shreyansh22485@iiitd.ac.in',
-      image: '/src/assets/Shreyansh.jpg'
-      // To use your own image, replace with: image: '/src/assets/shreyansh.jpg'
+      image: '/shreyansh.jpg'
     },
     {
       name: 'Riya Gupta',
       email: 'riya22410@iiitd.ac.in',
-      image: '/src/assets/Riya.jpg'
-      // To use your own image, replace with: image: '/src/assets/riya.jpg'
+      image: '/riya.jpg'
     }
   ]
 
@@ -94,7 +92,7 @@ export default function About({ onBack }) {
         <div className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-8 border border-indigo-200">
           <div className="flex flex-col items-center text-center gap-4">
             <img 
-              src="/src/assets/raghava.jpg"
+              src="/raghava.jpg"
               alt="Professor GPS Raghava"
               className="w-32 h-32 rounded-full border-4 border-white shadow-lg object-cover"
             />
