@@ -25,46 +25,46 @@ export default function App() {
       {/* Enhanced Header with Navigation */}
       <header className="bg-white/90 backdrop-blur-md border-b border-gray-200 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 py-3">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center">
-                <ChartBarIcon className="h-6 w-6 text-white" />
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3">
+            <div className="flex items-center gap-2 lg:gap-3">
+              <div className="h-8 w-8 lg:h-10 lg:w-10 rounded-xl bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center flex-shrink-0">
+                <ChartBarIcon className="h-5 w-5 lg:h-6 lg:w-6 text-white" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-gray-900">District Explorer</h1>
-                <p className="text-sm text-gray-600">Village-level development insights</p>
+                <h1 className="text-lg lg:text-2xl font-bold text-gray-900 whitespace-nowrap">District Explorer</h1>
+                <p className="text-xs lg:text-sm text-gray-600 hidden sm:block">Village-level development insights</p>
               </div>
             </div>
 
-            <nav className="flex items-center gap-4">
+            <nav className="flex items-center gap-2 overflow-x-auto pb-2 lg:pb-0 scrollbar-hide">
               <button
                 onClick={() => setView('home')}
-                className={`text-sm px-3 py-2 rounded-md ${view === 'home' ? 'bg-indigo-600 text-white' : 'text-gray-700 hover:bg-gray-100'}`}>
+                className={`text-xs lg:text-sm px-2 lg:px-3 py-1.5 lg:py-2 rounded-md whitespace-nowrap flex-shrink-0 ${view === 'home' ? 'bg-indigo-600 text-white' : 'text-gray-700 hover:bg-gray-100'}`}>
                 Home
               </button>
               <button
                 onClick={() => setView('search')}
-                className={`text-sm px-3 py-2 rounded-md ${view === 'search' ? 'bg-indigo-600 text-white' : 'text-gray-700 hover:bg-gray-100'}`}>
+                className={`text-xs lg:text-sm px-2 lg:px-3 py-1.5 lg:py-2 rounded-md whitespace-nowrap flex-shrink-0 ${view === 'search' ? 'bg-indigo-600 text-white' : 'text-gray-700 hover:bg-gray-100'}`}>
                 Search
               </button>
               <button
                 onClick={() => setView('browse')}
-                className={`text-sm px-3 py-2 rounded-md ${view === 'browse' ? 'bg-indigo-600 text-white' : 'text-gray-700 hover:bg-gray-100'}`}>
+                className={`text-xs lg:text-sm px-2 lg:px-3 py-1.5 lg:py-2 rounded-md whitespace-nowrap flex-shrink-0 ${view === 'browse' ? 'bg-indigo-600 text-white' : 'text-gray-700 hover:bg-gray-100'}`}>
                 Browse
               </button>
               <button
                 onClick={() => setView('sectors')}
-                className={`text-sm px-3 py-2 rounded-md ${view === 'sectors' ? 'bg-indigo-600 text-white' : 'text-gray-700 hover:bg-gray-100'}`}>
+                className={`text-xs lg:text-sm px-2 lg:px-3 py-1.5 lg:py-2 rounded-md whitespace-nowrap flex-shrink-0 ${view === 'sectors' ? 'bg-indigo-600 text-white' : 'text-gray-700 hover:bg-gray-100'}`}>
                 Sectors
               </button>
               <button
                 onClick={() => setView('programs')}
-                className={`text-sm px-3 py-2 rounded-md ${view === 'programs' ? 'bg-indigo-600 text-white' : 'text-gray-700 hover:bg-gray-100'}`}>
-                Similar Programs
+                className={`text-xs lg:text-sm px-2 lg:px-3 py-1.5 lg:py-2 rounded-md whitespace-nowrap flex-shrink-0 ${view === 'programs' ? 'bg-indigo-600 text-white' : 'text-gray-700 hover:bg-gray-100'}`}>
+                Programs
               </button>
               <button
                 onClick={() => setView('about')}
-                className={`text-sm px-3 py-2 rounded-md ${view === 'about' ? 'bg-indigo-600 text-white' : 'text-gray-700 hover:bg-gray-100'}`}>
+                className={`text-xs lg:text-sm px-2 lg:px-3 py-1.5 lg:py-2 rounded-md whitespace-nowrap flex-shrink-0 ${view === 'about' ? 'bg-indigo-600 text-white' : 'text-gray-700 hover:bg-gray-100'}`}>
                 About
               </button>
             </nav>
