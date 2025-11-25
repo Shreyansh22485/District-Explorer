@@ -62,16 +62,20 @@ const ChartCard = ({ title, children, className = "" }) => (
   </div>
 );
 
-const AccessibilityIndicator = ({ label, distance, icon }) => {
-  const getDistanceColor = (distance) => {
-    if (distance === 'In Village' || distance === '0' || distance === 0) return 'text-green-600 bg-green-100';
+const AccessibilityIndicator = ({ label, distance, icon, facilityCount = 0 }) => {
+  const getDistanceColor = (distance, count) => {
+    const dist = distance === 'In Village' ? 0 : Number(distance);
+    if (dist === 0 && count > 0) return 'text-green-600 bg-green-100';
+    if (dist === 0 && count === 0) return 'text-gray-600 bg-gray-100';
     if (distance === '5' || distance === 5 || distance === 'a') return 'text-yellow-600 bg-yellow-100';
     if (distance === '10' || distance === 10 || distance === 'b') return 'text-orange-600 bg-orange-100';
     return 'text-red-600 bg-red-100';
   };
 
-  const getDistanceText = (distance) => {
-    if (distance === 'In Village' || distance === '0' || distance === 0) return 'In Village';
+  const getDistanceText = (distance, count) => {
+    const dist = distance === 'In Village' ? 0 : Number(distance);
+    if (dist === 0 && count > 0) return 'In Village';
+    if (dist === 0 && count === 0) return 'Not Available';
     if (distance === '5' || distance === 5 || distance === 'a') return 'Within 5km';
     if (distance === '10' || distance === 10 || distance === 'b') return 'Within 10km';
     return 'Beyond 10km';
@@ -82,9 +86,10 @@ const AccessibilityIndicator = ({ label, distance, icon }) => {
       <div className="flex items-center gap-3">
         <span className="text-lg">{icon}</span>
         <span className="font-medium text-gray-700">{label}</span>
+        {facilityCount > 0 && <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">{facilityCount} available</span>}
       </div>
-      <span className={`px-3 py-1 rounded-full text-xs font-medium ${getDistanceColor(distance)}`}>
-        {getDistanceText(distance)}
+      <span className={`px-3 py-1 rounded-full text-xs font-medium ${getDistanceColor(distance, facilityCount)}`}>
+        {getDistanceText(distance, facilityCount)}
       </span>
     </div>
   );
@@ -323,12 +328,12 @@ const HealthAnalytics = ({ district, village }) => {
         
         <ChartCard title="Facility Accessibility Analysis">
           <div className="space-y-3">
-            <AccessibilityIndicator label="Community Health Centre" distance={data.accessibility.chcDistance} icon="🏥" />
-            <AccessibilityIndicator label="Primary Health Centre" distance={data.accessibility.phcDistance} icon="⚕️" />
-            <AccessibilityIndicator label="Hospital (Allopathic)" distance={data.accessibility.hospitalDistance} icon="🏥" />
-            <AccessibilityIndicator label="Dispensary" distance={data.accessibility.dispensaryDistance} icon="💊" />
-            <AccessibilityIndicator label="TB Clinic" distance={data.accessibility.tbClinicDistance} icon="🩺" />
-            <AccessibilityIndicator label="Family Welfare Centre" distance={data.accessibility.familyWelfareDistance} icon="👶" />
+            <AccessibilityIndicator label="Community Health Centre" distance={data.accessibility.chcDistance} icon="🏥" facilityCount={data.facilities.communityHealthCentre} />
+            <AccessibilityIndicator label="Primary Health Centre" distance={data.accessibility.phcDistance} icon="⚕️" facilityCount={data.facilities.primaryHealthCentre} />
+            <AccessibilityIndicator label="Hospital (Allopathic)" distance={data.accessibility.hospitalDistance} icon="🏥" facilityCount={data.facilities.hospitalAllopathic} />
+            <AccessibilityIndicator label="Dispensary" distance={data.accessibility.dispensaryDistance} icon="💊" facilityCount={data.facilities.dispensary} />
+            <AccessibilityIndicator label="TB Clinic" distance={data.accessibility.tbClinicDistance} icon="🩺" facilityCount={data.facilities.tbClinic} />
+            <AccessibilityIndicator label="Family Welfare Centre" distance={data.accessibility.familyWelfareDistance} icon="👶" facilityCount={data.facilities.familyWelfareCentre} />
           </div>
         </ChartCard>
       </div>

@@ -62,15 +62,17 @@ function ChartCard({ title, children, description }) {
 }
 
 function AccessibilityIndicator({ label, distance, available }) {
-  const getAccessibilityColor = (dist) => {
-    if (dist === 0) return 'bg-green-500'; // Available in village
+  const getAccessibilityColor = (dist, count) => {
+    if (dist === 0 && count > 0) return 'bg-green-500'; // Available in village
+    if (dist === 0 && count === 0) return 'bg-gray-400'; // Data inconsistency
     if (dist <= 5) return 'bg-yellow-500'; // Close by
     if (dist <= 10) return 'bg-orange-500'; // Moderate distance
     return 'bg-red-500'; // Far away
   };
 
-  const getAccessibilityText = (dist) => {
-    if (dist === 0) return 'In Village';
+  const getAccessibilityText = (dist, count) => {
+    if (dist === 0 && count > 0) return 'In Village';
+    if (dist === 0 && count === 0) return 'Not Available';
     if (dist <= 5) return `${dist} km (Close)`;
     if (dist <= 10) return `${dist} km (Moderate)`;
     return `${dist} km (Far)`;
@@ -79,11 +81,11 @@ function AccessibilityIndicator({ label, distance, available }) {
   return (
     <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
       <div className="flex items-center gap-3">
-        <div className={`w-3 h-3 rounded-full ${getAccessibilityColor(distance)}`}></div>
+        <div className={`w-3 h-3 rounded-full ${getAccessibilityColor(distance, available)}`}></div>
         <span className="text-sm font-medium text-gray-700">{label}</span>
         {available > 0 && <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">{available} available</span>}
       </div>
-      <span className="text-sm text-gray-600">{getAccessibilityText(distance)}</span>
+      <span className="text-sm text-gray-600">{getAccessibilityText(distance, available)}</span>
     </div>
   );
 }

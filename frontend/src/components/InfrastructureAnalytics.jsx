@@ -125,25 +125,27 @@ const InfrastructureIndicator = ({ category, items, color = "blue" }) => {
   );
 };
 
-const AccessibilityIndicator = ({ accessibility }) => {
+const AccessibilityIndicator = ({ accessibility, communication, transportation }) => {
   const accessibilityItems = [
-    { label: 'Post Office', distance: accessibility.postOfficeDistance, icon: '📮' },
-    { label: 'Telephone', distance: accessibility.telephoneDistance, icon: '📞' },
-    { label: 'Internet/CSC', distance: accessibility.internetDistance, icon: '💻' },
-    { label: 'Public Bus', distance: accessibility.publicBusDistance, icon: '🚌' },
-    { label: 'Railway', distance: accessibility.railwayDistance, icon: '🚂' },
-    { label: 'Highway', distance: accessibility.highwayDistance, icon: '🛣️' }
+    { label: 'Post Office', distance: accessibility.postOfficeDistance, icon: '📮', isAvailable: communication.postOffice },
+    { label: 'Telephone', distance: accessibility.telephoneDistance, icon: '📞', isAvailable: communication.telephone },
+    { label: 'Internet/CSC', distance: accessibility.internetDistance, icon: '💻', isAvailable: communication.internetCafe },
+    { label: 'Public Bus', distance: accessibility.publicBusDistance, icon: '🚌', isAvailable: transportation.publicBus },
+    { label: 'Railway', distance: accessibility.railwayDistance, icon: '🚂', isAvailable: transportation.railwayStation },
+    { label: 'Highway', distance: accessibility.highwayDistance, icon: '🛣️', isAvailable: transportation.highways }
   ];
 
-  const getDistanceColor = (distance) => {
-    if (distance === 0) return 'bg-green-500';
+  const getDistanceColor = (distance, isAvailable) => {
+    if (distance === 0 && isAvailable) return 'bg-green-500';
+    if (distance === 0 && !isAvailable) return 'bg-gray-400';
     if (distance <= 5) return 'bg-yellow-500';
     if (distance <= 10) return 'bg-orange-500';
     return 'bg-red-500';
   };
 
-  const getDistanceText = (distance) => {
-    if (distance === 0) return 'In Village';
+  const getDistanceText = (distance, isAvailable) => {
+    if (distance === 0 && isAvailable) return 'In Village';
+    if (distance === 0 && !isAvailable) return 'Not Available';
     if (distance <= 5) return `${distance}km - Near`;
     if (distance <= 10) return `${distance}km - Moderate`;
     return `${distance}km - Far`;
@@ -156,10 +158,11 @@ const AccessibilityIndicator = ({ accessibility }) => {
           <div className="flex items-center gap-3">
             <span className="text-lg">{item.icon}</span>
             <span className="font-medium text-gray-700">{item.label}</span>
+            {item.isAvailable && <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Available</span>}
           </div>
           <div className="flex items-center gap-2">
-            <div className={`px-3 py-1 rounded-full text-white text-sm ${getDistanceColor(item.distance)}`}>
-              {getDistanceText(item.distance)}
+            <div className={`px-3 py-1 rounded-full text-white text-sm ${getDistanceColor(item.distance, item.isAvailable)}`}>
+              {getDistanceText(item.distance, item.isAvailable)}
             </div>
           </div>
         </div>
@@ -379,7 +382,12 @@ const InfrastructureAnalytics = ({ district, village }) => {
           <Radar data={infrastructureRadar} options={radarOptions} />
         </ChartCard>
         
-        <ChartCard title="Service Accessibility">
+        <ChartCard title="Service 
+            accessibility={infraData.accessibility} 
+            communication={infraData.communication}
+            transportation={infraData.transportation}
+            ">
+         
           <AccessibilityIndicator accessibility={infraData.accessibility} />
         </ChartCard>
       </div>
