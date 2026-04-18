@@ -1,0 +1,33 @@
+ML-DERIVED WEIGHTS REPORT
+================================================================================
+
+SHAP-Derived Composite Weights (Colombia 2023):
+--------------------------------------------------------------------------------
+  health_index                  : 0.367270 (36.727%)
+  education_index               : 0.173803 (17.380%)
+  irrigation_index              : 0.141875 (14.187%)
+  social_index                  : 0.121740 (12.174%)
+  agriculture_index             : 0.120458 (12.046%)
+  infrastructure_index          : 0.074855 (7.486%)
+
+
+Lasso-Regularized Weights (Kenya 2022):
+--------------------------------------------------------------------------------
+  irrigation_index              : 0.167217 (16.722%)
+  social_index                  : 0.167216 (16.722%)
+  agriculture_index             : 0.166799 (16.680%)
+  infrastructure_index          : 0.166675 (16.668%)
+  health_index                  : 0.166378 (16.638%)
+  education_index               : 0.165714 (16.571%)
+
+
+Comparison with Expert Weights:
+--------------------------------------------------------------------------------
+Sector                           Expert SDG         SHAP        Lasso     Ensemble
+--------------------------------------------------------------------------------
+Agriculture                          0.1500       0.1205       0.1668       0.1458
+Education                            0.2000       0.1738       0.1657       0.1798
+Health                               0.2500       0.3673       0.1664       0.2612
+Infrastructure                       0.1500       0.0749       0.1667       0.1305
+Irrigation                           0.1500       0.1419       0.1672       0.1530
+Social                               0.1000       0.1217       0.1672       0.1297

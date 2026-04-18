@@ -6,6 +6,7 @@ import HealthAnalytics from './HealthAnalytics';
 import InfrastructureAnalytics from './InfrastructureAnalytics';
 import IrrigationAnalytics from './IrrigationAnalytics';
 import SocialAnalytics from './SocialAnalytics';
+import PolicySimulator from './PolicySimulator';
 
 const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:4000';
 
@@ -219,6 +220,18 @@ export default function Search({ onBack }) {
                 <Pills items={sectors} current={activeSector} onChange={setActiveSector} />
               </div>
             )}
+
+            {village && (
+              <div className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl shadow-sm border border-indigo-100 p-6">
+                <h3 className="text-lg font-semibold text-indigo-900 mb-4">AI Tools</h3>
+                <button 
+                  onClick={() => setActiveSector('policy-simulator')}
+                  className={`w-full px-4 py-2 flex items-center justify-center gap-2 rounded-xl text-sm font-medium transition-all ${activeSector === 'policy-simulator' ? 'bg-indigo-600 text-white shadow-md' : 'bg-white text-indigo-700 hover:bg-indigo-50 border border-indigo-200'}`}
+                >
+                  ✨ Policy Simulator
+                </button>
+              </div>
+            )}
           </aside>
 
           {/* Main content */}
@@ -272,6 +285,10 @@ export default function Search({ onBack }) {
 
             {!loading && insights && sectors.length > 0 && activeSector === 'social' && (
               <SocialAnalytics district={district} village={village} />
+            )}
+
+            {!loading && insights && sectors.length > 0 && activeSector === 'policy-simulator' && (
+              <PolicySimulator district={district} village={village} />
             )}
 
             {!loading && insights && sectors.length === 0 && (

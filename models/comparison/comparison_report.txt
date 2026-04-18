@@ -1,0 +1,22 @@
+MODEL COMPARISON REPORT
+================================================================================
+
+Generated: 2026-02-22 20:28:36
+Total Models: 6
+
+PERFORMANCE RANKING
+--------------------------------------------------------------------------------
+Rank   Target Index                   R²         MAE        RMSE      
+--------------------------------------------------------------------------------
+1      composite_index_expert         0.9418     1.0786     1.5811    
+2      composite_index_lasso          0.9403     1.1506     1.6891    
+3      composite_index_equal          0.9395     1.1529     1.7010    
+4      composite_index_ensemble       0.9274     1.3081     1.9663    
+5      composite_index_sdg            0.9203     1.4093     2.1600    
+6      composite_index_shap           0.9089     1.7310     2.7108    
+
+
+BEST MODEL: composite_index_expert
+R² Score: 0.9418
+MAE: 1.0786
+RMSE: 1.5811

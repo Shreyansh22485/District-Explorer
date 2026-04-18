@@ -1,0 +1,51 @@
+POLICY PREDICTION MODEL - TRAINING REPORT
+================================================================================
+
+Date: 2026-02-15 22:23:47.715535
+Model Type: LightGBM Regressor
+Purpose: Policy intervention impact prediction
+
+DATA SUMMARY:
+--------------------------------------------------------------------------------
+Total villages: 6,839
+Training villages: 5,583
+Test villages: 1,256
+Features: 161
+Target: composite_index_equal
+
+MODEL PERFORMANCE:
+--------------------------------------------------------------------------------
+Training R²:  0.9876
+Test R²:      0.9395
+Test MAE:     1.1529
+Test RMSE:    1.7010
+
+USAGE EXAMPLE (Python):
+--------------------------------------------------------------------------------
+
+import pickle
+import pandas as pd
+
+# Load model
+with open('models/policy_prediction_model.pkl', 'rb') as f:
+    model_data = pickle.load(f)
+    model = model_data['model']
+    metadata = model_data['metadata']
+
+# Prepare features (must match training features)
+features = metadata['feature_cols']
+
+# Example: Predict current index
+current_village_data = {...}  # Dict with all feature values
+current_features = pd.DataFrame([current_village_data])[features].fillna(0)
+baseline_index = model.predict(current_features)[0]
+
+# Example: Predict after adding 5 schools
+modified_data = current_village_data.copy()
+modified_data['edu_total_pre_primary_school'] += 5
+modified_features = pd.DataFrame([modified_data])[features].fillna(0)
+new_index = model.predict(modified_features)[0]
+
+# Calculate impact
+delta = new_index - baseline_index
+print(f"Impact: +{delta:.2f} index points")

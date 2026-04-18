@@ -1,0 +1,51 @@
+HARYANA VILLAGE DEVELOPMENT INDICES - SUMMARY STATISTICS
+================================================================================
+
+Total Villages Processed: 6841
+Total Districts: 21
+Total Population: 16,509,359
+
+SECTOR INDEX STATISTICS (Village-level):
+--------------------------------------------------------------------------------
+
+Agriculture Index:
+  Mean: 64.64
+  Median: 65.89
+  Min: 11.76
+  Max: 79.95
+  Std Dev: 8.38
+
+Education Index:
+  Mean: 31.90
+  Median: 27.98
+  Min: 9.05
+  Max: 74.24
+  Std Dev: 11.95
+
+Health Index:
+  Mean: 32.08
+  Median: 20.61
+  Min: 5.15
+  Max: 74.54
+  Std Dev: 17.93
+
+Infrastructure Index:
+  Mean: 40.99
+  Median: 41.44
+  Min: 0.00
+  Max: 76.15
+  Std Dev: 9.23
+
+Irrigation Index:
+  Mean: 58.32
+  Median: 60.00
+  Min: 0.00
+  Max: 95.57
+  Std Dev: 15.18
+
+Social Index:
+  Mean: 28.33
+  Median: 24.50
+  Min: 0.00
+  Max: 70.00
+  Std Dev: 11.99

@@ -1,0 +1,26 @@
+HARYANA VILLAGE DEVELOPMENT INDICES - ML-ENHANCED SUMMARY
+================================================================================
+
+Total Villages: 6841
+Total Districts: 21
+Total Population: 16,509,359
+
+COMPOSITE INDEX CORRELATIONS:
+--------------------------------------------------------------------------------
+                          composite_index_equal  composite_index_sdg  composite_index_expert  composite_index_shap  composite_index_lasso  composite_index_ensemble
+composite_index_equal                  1.000000             0.979483                0.985803              0.930100               0.999998                  0.992215
+composite_index_sdg                    0.979483             1.000000                0.960892              0.980491               0.979178                  0.996006
+composite_index_expert                 0.985803             0.960892                1.000000              0.900469               0.985952                  0.978507
+composite_index_shap                   0.930100             0.980491                0.900469              1.000000               0.929672                  0.966474
+composite_index_lasso                  0.999998             0.979178                0.985952              0.929672               1.000000                  0.992074
+composite_index_ensemble               0.992215             0.996006                0.978507              0.966474               0.992074                  1.000000
+
+DISTRICT RANK CORRELATIONS:
+--------------------------------------------------------------------------------
+               rank_equal  rank_sdg  rank_expert  rank_shap  rank_lasso  rank_ensemble
+rank_equal       1.000000  0.974026     0.972727   0.936364    0.998701       0.985714
+rank_sdg         0.974026  1.000000     0.976623   0.974026    0.972727       0.994805
+rank_expert      0.972727  0.976623     1.000000   0.925974    0.974026       0.979221
+rank_shap        0.936364  0.974026     0.925974   1.000000    0.935065       0.968831
+rank_lasso       0.998701  0.972727     0.974026   0.935065    1.000000       0.984416
+rank_ensemble    0.985714  0.994805     0.979221   0.968831    0.984416       1.000000

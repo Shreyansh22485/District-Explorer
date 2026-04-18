@@ -4,6 +4,7 @@ import cors from 'cors';
 import morgan from 'morgan';
 import path from 'node:path';
 import fs from 'node:fs';
+import { execFile } from 'node:child_process';
 import fg from 'fast-glob';
 import { parse } from 'csv-parse';
 import { fileURLToPath } from 'node:url';
@@ -1566,7 +1567,118 @@ app.get('/api/sectors/statistics', async (req, res) => {
   }
 });
 
+// API: Simulate Policy via Gemini natively in Node
+app.post('/api/simulate-policy', async (req, res) => {
+    const { query, model: modelName, district, village } = req.body;
+  const configModel = modelName || process.env.POLICY_SIMULATOR_MODEL || 'composite_index_expert';
+  const apiKey = process.env.GOOGLE_API_KEY;
+  if (!apiKey || !GoogleGenerativeAI) {
+    return res.status(503).json({ message: 'AI features are not configured' });
+  }
+
+  try {
+    const genAI = new GoogleGenerativeAI(apiKey);
+    // Use flash model for speed and quota limits
+    const aiModel = genAI.getGenerativeModel({ model: process.env.GEMINI_MODEL || 'gemini-2.5-flash' });
+
+    // Step 1: Read metadata to get valid features
+    const metadataPath = path.resolve(__dirname, '../../models/policy_prediction_model_metadata.json');
+    if (!fs.existsSync(metadataPath)) {
+      return res.status(500).json({ message: 'Model metadata not found' });
+    }
+    const metadata = JSON.parse(fs.readFileSync(metadataPath, 'utf8'));
+    const featureCols = metadata.feature_cols;
+
+    // Step 2: Use Gemini to map text to feature modifications
+    const mapPrompt = `
+You are an expert data mapping assistant for a rural development ML model.
+The user is proposing a policy change or scenario in natural language.
+Your task is to map their text into precise numerical modifications (deltas) for corresponding dataset columns.
+
+User Query: "${query}"
+
+Available Features in the Dataset (select ONLY from these):
+${JSON.stringify(featureCols, null, 2)}
+
+Instructions:
+1. Identify the features that match the user's intent. If there is no exact match for words like "primary school", pick the closest available related feature like "edu_total_pre_primary_school" or "edu_total_middle_schools" instead of ignoring it.
+2. Determine the numerical change (e.g., "add 2 schools" -> +2).
+3. Return ONLY a valid JSON object where keys are exact feature names from the list, and values are numerical deltas.
+4. Do not include markdown formatting or commentary. Just raw JSON.
+`;
+    // Set responseSchema to force JSON out without formatting if possible, but fallback is fine
+    const mapResponse = await aiModel.generateContent(mapPrompt);
+    let mapText = mapResponse.response.text().replace(/\`\`\`json/g, '').replace(/\`\`\`/g, '').trim();
+    let modifications = {};
+    try {
+      modifications = JSON.parse(mapText);
+    } catch (e) {
+      console.error("Gemini mapped incorrectly:", mapText);
+      return res.status(400).json({ message: "Failed to parse scenario into metrics. Try phrasing it differently.", parsedText: mapText });
+    }
+
+    // Step 3: Run prediction via lightweight python script
+    const scriptPath = path.resolve(__dirname, '../scripts/predict_score.py');
+    const pythonPath = 'python'; // Local execution uses system python by default
+    
+    execFile(pythonPath, [scriptPath, '--deltas', JSON.stringify(modifications), '--model', configModel, ...(district ? ['--district', district] : []), ...(village ? ['--village', village] : [])], { maxBuffer: 1024 * 1024 * 5 }, async (error, stdout, stderr) => {
+      if (error) {
+        console.error('Python execution error:', error);
+        return res.status(500).json({ message: 'Prediction simulation failed', error: error.message });
+      }
+
+      let scores;
+      try {
+        const jsonStrMatch = stdout.match(/\{[\s\S]*\}/);
+        scores = JSON.parse(jsonStrMatch[0]);
+        if (scores.error) return res.status(500).json({ message: scores.error });
+      } catch (parseError) {
+        return res.status(500).json({ message: 'Invalid prediction output', rawOutput: stdout });
+      }
+
+      // Step 4: Use Gemini to interpret the final results
+      const fmtName = (str) => { if (!str) return ""; return str.replace(/[-_]/g, " ").replace(/\b\w/g, l => l.toUpperCase()); };
+      const locCtx = district && village ? `the village of ${fmtName(village)} in ${fmtName(district)} district` : `a typical rural village`;
+      const analyzePrompt = `
+You are an AI policy advisor for rural development.
+The user proposed this scenario for ${locCtx}: "${query}"
+
+We mapped this to the following data changes: ${JSON.stringify(modifications)}
+
+Our Machine Learning model (targeting "${configModel}") evaluated this on ${locCtx}.
+Original Development Index Score: ${scores.original_score.toFixed(4)}
+New Predicted Score: ${scores.new_score.toFixed(4)}
+Difference: ${(scores.change > 0 ? '+' : '')}${scores.change.toFixed(4)} (${(scores.percent_change > 0 ? '+' : '')}${scores.percent_change.toFixed(2)}%)
+
+Task:
+Write a clear, professional 1-2 paragraph summary interpreting these results specifically for ${locCtx}.
+- Explain if it leads to a positive/negative impact.
+- Contextualize the size of the impact.
+- Give a brief recommendation.
+Do not use complex ML jargon. Focus on the real-world implications.
+`;
+      const analyzeResponse = await aiModel.generateContent(analyzePrompt);
+      const analysisText = analyzeResponse.response.text();
+
+      res.json({
+        query,
+        mapped_modifications: modifications,
+        original_score: scores.original_score,
+        new_score: scores.new_score,
+        change: scores.change,
+        percent_change: scores.percent_change,
+        analysis: analysisText,
+        model_used: configModel
+      });
+    });
+  } catch (err) {
+    console.error('Simulation error:', err);
+    res.status(500).json({ message: 'Policy simulation error', error: String(err) });
+  }
+});
+
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
   console.log(`District Explorer backend listening on http://localhost:${PORT}`);
 });
+

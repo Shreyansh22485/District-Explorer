@@ -14,6 +14,7 @@ import About from './components/About';
 import Search from './components/Search';
 import Browse from './components/Browse';
 import Contact from './components/Contact';
+import PolicySimulator from './components/PolicySimulator';
 
 const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:4000';
 
@@ -61,6 +62,12 @@ export default function App() {
                 onClick={() => setView('programs')}
                 className={`text-xs lg:text-sm px-2 lg:px-3 py-1.5 lg:py-2 rounded-md whitespace-nowrap flex-shrink-0 ${view === 'programs' ? 'bg-indigo-600 text-white' : 'text-gray-700 hover:bg-gray-100'}`}>
                 Programs
+              </button>
+              <button
+                onClick={() => setView('simulate')}
+                className={`text-xs lg:text-sm px-2 lg:px-3 py-1.5 lg:py-2 rounded-md whitespace-nowrap flex-shrink-0 flex items-center gap-1 ${view === 'simulate' ? 'bg-indigo-600 text-white' : 'text-gray-700 hover:bg-gray-100'}`}>
+                <SparklesIcon className="h-4 w-4" />
+                Simulate
               </button>
               <button
                 onClick={() => setView('about')}
@@ -129,26 +136,28 @@ export default function App() {
           <About onBack={() => setView('home')} />
         ) : view === 'programs' ? (
           <Programs onBack={() => setView('home')} />
+        ) : view === 'simulate' ? (
+          <PolicySimulator onBack={() => setView('home')} />
         ) : view === 'contact' ? (
           <Contact onBack={() => setView('home')} />
         ) : (
           <>
             {/* Quick Action Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
               <button
                 onClick={() => setView('search')}
-                className="group bg-white rounded-2xl shadow-sm border border-gray-200 p-8 hover:shadow-xl hover:border-indigo-300 transition-all text-left"
+                className="group bg-white rounded-2xl shadow-sm border border-gray-200 p-6 hover:shadow-xl hover:border-indigo-300 transition-all text-left flex flex-col h-full"
               >
-                <div className="h-14 w-14 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <MagnifyingGlassIcon className="h-7 w-7 text-white" />
+                <div className="h-12 w-12 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform flex-shrink-0">
+                  <MagnifyingGlassIcon className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">
+                <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">
                   Search Villages
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                  Quick search by district and village to access detailed development analytics
+                <p className="text-gray-600 text-sm leading-relaxed mb-4 flex-grow">
+                  Search by district and village to access detailed analytics
                 </p>
-                <div className="flex items-center gap-2 text-indigo-600 font-medium text-sm">
+                <div className="flex items-center gap-2 text-indigo-600 font-medium text-sm mt-auto">
                   <span>Get Started</span>
                   <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -158,18 +167,18 @@ export default function App() {
 
               <button
                 onClick={() => setView('browse')}
-                className="group bg-white rounded-2xl shadow-sm border border-gray-200 p-8 hover:shadow-xl hover:border-green-300 transition-all text-left"
+                className="group bg-white rounded-2xl shadow-sm border border-gray-200 p-6 hover:shadow-xl hover:border-green-300 transition-all text-left flex flex-col h-full"
               >
-                <div className="h-14 w-14 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <BookOpenIcon className="h-7 w-7 text-white" />
+                <div className="h-12 w-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform flex-shrink-0">
+                  <BookOpenIcon className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">
+                <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">
                   Browse Districts
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                  Explore all districts and navigate through villages with intuitive listings
+                <p className="text-gray-600 text-sm leading-relaxed mb-4 flex-grow">
+                  Explore all districts and navigate through specific villages
                 </p>
-                <div className="flex items-center gap-2 text-green-600 font-medium text-sm">
+                <div className="flex items-center gap-2 text-green-600 font-medium text-sm mt-auto">
                   <span>Explore Now</span>
                   <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -179,19 +188,40 @@ export default function App() {
 
               <button
                 onClick={() => setView('sectors')}
-                className="group bg-white rounded-2xl shadow-sm border border-gray-200 p-8 hover:shadow-xl hover:border-orange-300 transition-all text-left"
+                className="group bg-white rounded-2xl shadow-sm border border-gray-200 p-6 hover:shadow-xl hover:border-orange-300 transition-all text-left flex flex-col h-full"
               >
-                <div className="h-14 w-14 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <ChartBarIcon className="h-7 w-7 text-white" />
+                <div className="h-12 w-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform flex-shrink-0">
+                  <ChartBarIcon className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors">
+                <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors">
                   Sector Overview
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                <p className="text-gray-600 text-sm leading-relaxed mb-4 flex-grow">
                   View state-wide statistics across all 6 development sectors
                 </p>
-                <div className="flex items-center gap-2 text-orange-600 font-medium text-sm">
+                <div className="flex items-center gap-2 text-orange-600 font-medium text-sm mt-auto">
                   <span>View Stats</span>
+                  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </button>
+              
+              <button
+                onClick={() => setView('simulate')}
+                className="group bg-white rounded-2xl shadow-sm border border-gray-200 p-6 hover:shadow-xl hover:border-purple-300 transition-all text-left flex flex-col h-full"
+              >
+                <div className="h-12 w-12 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform flex-shrink-0">
+                  <SparklesIcon className="h-6 w-6 text-white" />
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-purple-600 transition-colors">
+                  AI Policy Simulator
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed mb-4 flex-grow">
+                  Forecast development impact using natural language scenarios
+                </p>
+                <div className="flex items-center gap-2 text-purple-600 font-medium text-sm mt-auto">
+                  <span>Simulate Models</span>
                   <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -358,6 +388,11 @@ export default function App() {
                     Sectors
                   </button>
                 </li>
+                <li>
+                  <button onClick={() => setView('simulate')} className="text-gray-400 hover:text-indigo-400 transition-colors">
+                    Policy Simulator
+                  </button>
+                </li>
               </ul>
             </div>
 
@@ -400,3 +435,4 @@ export default function App() {
     </div>
   );
 }
+
