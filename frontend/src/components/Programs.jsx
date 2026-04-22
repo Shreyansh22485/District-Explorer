@@ -5,7 +5,7 @@ export default function Programs({ onBack }) {
   const india = [
   { 
     name: 'Shining India Campaign (2000s)', 
-    url: 'https://archive.india.gov.in', 
+    url: 'https://en.wikipedia.org/wiki/India_Shining', 
     description: 'Government narrative promoting India’s economic growth and global image in the early 2000s' 
   },
   { 
@@ -15,12 +15,12 @@ export default function Programs({ onBack }) {
   },
   { 
     name: 'Mission Antyodaya Survey', 
-    url: 'https://missionantyodaya.nic.in/', 
+    url: 'https://missionantyodaya.dord.gov.in/', 
     description: 'Annual survey assessing village-level infrastructure and development indicators' 
   },
   { 
     name: 'Smart Cities Mission', 
-    url: 'https://smartcities.gov.in/', 
+    url: 'https://en.wikipedia.org/wiki/Smart_Cities_Mission', 
     description: 'Urban renewal program for developing sustainable and citizen-friendly smart cities' 
   },
   { 
